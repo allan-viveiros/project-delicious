@@ -7,85 +7,127 @@
     <title>DELICIOUS</title>
 
     <link rel="stylesheet" href="./styles/style.css">
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/41f308cf0c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- HEADER -->
-    <header id="home">
-        <div class="wrapper">
+    <header id="home" class="home">
+        <div class="wrapper">   
             <!-- NAVIGATION SECTION -->
-            <nav>
-                <div class="logo">delicious</div>
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#recipes">recipes</a></li>
-                    <li><a href="#nutrition">nutrition</a></li>
-                    <li><a href="./pages/blog.html">blog</a></li>
-                    <li><a href="#shop">shop</a></li>
-                    <li><a href="./pages/contact.html">contact</a></li>
-                    <li><a href="#">👜</a></li>
-                    <li><a href="#">🔍</a></li>
-                </ul>
-            </nav>
+            <div class="navigation">
+                <!-- TOGGLE BUTTON -->
+                <div class="toggle" onclick="toggleButton();">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- LOGO -->
+                <div class="logo"><h1>delicious</h1></div>
+                <!-- NAV MENUBAR -->
+                <nav id="nav">                
+                    <ul>
+                        <li><a href="#home" class="active">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#recipes">recipes</a></li>
+                        <li><a href="#nutrition">nutrition</a></li>
+                        <li><a href="./pages/blog.html">blog</a></li>
+                        <li><a href="#shop">shop</a></li>
+                        <li><a href="./pages/contact.html">contact</a></li>
+                        <li><a href="#"><i class="fa fa-shopping-bag"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </nav>
+            </div>         
         </div>
     </header>
 
     <main>
         <!-- RECIPES SECTION  -->
-        <section id="recipes">
-            <article class="wrapper">                
-                <div class="text">
-                    <h2>most popular recipes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quo odit atque, unde vitae animi voluptatem maxime facere at architecto quidem, provident fugiat accusantium ipsum enim veritatis ea neque ducimus.</p>
-                    <button>view recipes</button>
-                </div>
-                <figure><img src="./assets/home-2.jpeg" alt="A beautiful bowl of lettuce"></figure>               
+        <section id="recipes" class="recipes">
+            <div class="wrapper">    
+                <article>
+                    <div class="text">
+                        <h2>most popular recipes</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quo odit atque, unde vitae animi voluptatem maxime facere at architecto quidem, provident fugiat accusantium ipsum enim veritatis ea neque ducimus.</p>
+                        <button>view recipes</button>
+                    </div>
+                    <figure><img src="./assets/home-2.jpeg" alt="A beautiful bowl of lettuce"></figure>               
+                </article>            
             </div>
         </section>
 
         <!-- SECTION SHOP -->
-        <section id="shop">
+        <section id="shop" class="shop">
             <div class="wrapper">
-                <figure><img src="./assets/home-3.jpeg" alt="A meet and vegetables wrapper"></figure>
-                <div class="text">
-                    <ul>
-                        <li>
-                            <h3>🥦 vegetarian</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
-                        </li>
-                        <li>
-                            <h3>☕ desserts</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
-                        </li>
-                        <li>
-                            <h3>🥬 salads</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
-                        </li>
-                        <li>
-                            <h3>🍴 appetizers</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
-                        </li>
-                        <li>
-                            <h3>🍸 drinks</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
-                        </li>
-                        <li>
-                            <h3>🥄 side dishes</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
-                        </li>
-                    </ul>
-                </div>                    
+                <article>
+                    <figure><img src="./assets/home-3.jpeg" alt="A meet and vegetables wrapper"></figure>
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <div class="icon">🥦</div>
+                                <div class="textShop">
+                                    <h3>vegetarian</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="icon">☕</div>
+                                <div class="textShop">
+                                    <h3>desserts</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">🥬</div>
+                                <div class="textShop">
+                                    <h3>salads</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">🍴</div>
+                                <div class="textShop">
+                                    <h3>appetizers</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">🍸</div>
+                                <div class="textShop">
+                                    <h3>drinks</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">🥄</div>
+                                <div class="textShop">
+                                <h3>side dishes</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam!</p>
+                            </li>
+                        </ul>
+                    </div>                    
+                </article>
             </div>
         </section>
 
         <!-- ABOUT SECTION -->
-        <section id="about">
+        <section id="about" class="about">
             <div class="wrapper">
                 <!-- ABOUT US -->
                 <article class="aboutUs">
-                    <figure><img src="./assets/home-4.jpeg" alt="Picture of the dinner's table"> ADD THE PINK CIRCLE IMAGE !!</figure>
-                    <h3>our restaurants</h3>
-                    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quidem nam eius enim harum id fugit quos quis maiores illum?</div>
+                    <figure>
+                        <div class="topImg"><img src="./assets/home-circle-text.png" alt="Yum food"></div>
+                        <img src="./assets/home-4.jpeg" alt="Picture of the dinner's table">                        
+                    </figure>                    
+                    <div class="text">
+                        <h3>our restaurants</h3>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quidem nam eius enim harum id fugit quos quis maiores illum?</div>
+                        </p>
                 </article>
 
                 <!-- GALLERY -->
@@ -105,11 +147,11 @@
         <!-- NUTRITION SECTION -->
         <section id="nutrition">
             <div class="wrapper">
-                <h2></h2>
+                <h2>hungry clients</h2>                
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias unde consectetur accusamus temporibus. Non quasi minus nobis pariatur laboriosam eius, laudantium quam in doloremque qui libero quas reiciendis necessitatibus praesentium?</p>
-            </div>
-            <button> < </button>
-            <button> > </button>
+                <button> < </button>
+                <button> > </button>
+            </div>            
         </section>
     </main>
 
@@ -148,6 +190,14 @@
                     <label for="email" class="sr-only" hidden>Email address</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email">
                     <button>-></button>
+
+                    <div class="socialMedia">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                     
                 </div>
             </div>
@@ -157,5 +207,14 @@
             </div>
         </div>        
     </footer>
+
+    <!-- JAVASCRIPT TO TOGGLE MENU -->
+    <script type="text/javascript">
+        function toggleButton() {
+            var navBar = document.getElementById("nav");
+            navBar.classList.toggle('show');
+        }
+    </script>
+
 </body>
 </html>
