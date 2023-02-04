@@ -1,0 +1,108 @@
+/**IMPORT UTILITIES **/
+@use "./utilities" as *;
+
+/* ***MAIN SECTION - CONTACT PAGE*** */
+.contactPage .wrapper {
+
+    .contactForm{  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .formWrapper {
+            width: 70%;
+            padding: 80px 20px;
+
+            // border: 1px solid red;
+
+            form {     
+                width: 70%; 
+                float: right;                
+                
+                // border: 1px solid purple;
+
+                input[type=text],
+                input[type=email],
+                textarea {
+                    @include bodyText($blackTwo);
+                    background-color: $bgWhite;
+                    border: none;
+                    min-height: 40px;
+                    margin: 10px 0;
+                    padding: 10px;
+                }
+
+                input[id=userName], [id=userEmail] {
+                    width: 49%;
+                }
+
+                input[id=subject] {
+                    width: 99%;
+                }
+
+                textarea {
+                    width: 99%;
+                    min-height: 200px;
+                    resize: none;                    
+                }
+
+                button[type=submit] {
+                    background-color: transparent;
+                    color: $green;
+                    border: none;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+
+            h2 {
+                text-align: left;
+                text-transform: uppercase;
+                margin: 15px 0;
+            }
+        }
+
+        .detailsWrapper {
+            width: 30%;
+            background-color: $bgWhite;
+            
+            .contactDetails,
+            .workingHours,
+            .contactInfo {
+                @include bodyText($brownGrey);
+                margin: 40px 20px;
+                width: 65%;
+                
+                // border: 1px solid yellow;
+
+                h2 {
+                    text-transform: uppercase;
+                    color: $black;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    color: $black;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    margin: 0;
+                    span {
+                        color: $black;
+                        font-family: Raleway', sans-serif';                    
+                    }
+                }
+            }
+        }
+    }
+}

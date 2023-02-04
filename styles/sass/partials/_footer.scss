@@ -101,7 +101,7 @@ footer .wrapper {
                 cursor: pointer;
 
                 &:hover {
-                    background-color: $bgGreen;
+                    // background-color: $bgWhite;
                     color: $black;
                 }
             }
@@ -120,6 +120,11 @@ footer .wrapper {
                         flex-basis: 10%;
                         a {
                             color: $bgWhite;
+                            font-size: 1rem;
+
+                            &:hover {
+                                color: $green;
+                            }
                         }                        
                     }
                 }

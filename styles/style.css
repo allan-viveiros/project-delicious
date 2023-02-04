@@ -61,7 +61,6 @@
 }
 .home .wrapper .navigation nav ul li a {
   display: inline-block;
-  font-size: 0.7rem;
   color: #2E2E2E;
   text-transform: uppercase;
 }
@@ -71,6 +70,11 @@
 }
 .home .wrapper .navigation nav ul li a.active {
   color: #6bb102;
+}
+
+/** BACKGROUND IMG FOR CONTACT PAGE **/
+.home .contactPage {
+  background-image: url(../assets/contact-1.jpeg);
 }
 
 /**IMPORT UTILITIES **/
@@ -111,14 +115,18 @@
 .recipes article .text button {
   margin: 0;
   border: 0;
-  padding: 5px 20px;
+  padding: 5px 30px;
   background-color: #6bb102;
   text-transform: uppercase;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 36px;
+  letter-spacing: 0.5px;
   color: white;
+}
+.recipes article .text button:hover {
+  color: #333333;
 }
 .recipes article figure {
   width: 50%;
@@ -201,6 +209,9 @@
   line-height: 24px;
   letter-spacing: 0.3px;
   color: #999999;
+}
+.shop article .text ul li .textShop a h3:hover {
+  color: #6bb102;
 }
 .shop article figure {
   width: 50%;
@@ -323,6 +334,9 @@
   font-weight: bold;
   cursor: pointer;
 }
+.nutrition .wrapper button:hover {
+  color: #6bb102;
+}
 .nutrition .wrapper button.back {
   color: rgba(246, 246, 246, 0.568627451);
 }
@@ -443,7 +457,6 @@ footer .wrapper .topFooter .subscribe button {
   cursor: pointer;
 }
 footer .wrapper .topFooter .subscribe button:hover {
-  background-color: #DDED9A;
   color: #2E2E2E;
 }
 footer .wrapper .topFooter .subscribe .socialMedia {
@@ -466,6 +479,10 @@ footer .wrapper .topFooter .subscribe .socialMedia ul li {
 }
 footer .wrapper .topFooter .subscribe .socialMedia ul li a {
   color: #F6F6F6;
+  font-size: 1rem;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul li a:hover {
+  color: #6bb102;
 }
 footer .wrapper .bottomFooter {
   background-color: #2E2E2E;
@@ -480,6 +497,113 @@ footer .wrapper .bottomFooter p {
 }
 footer .wrapper .bottomFooter p span {
   color: #6bb102;
+}
+
+/**IMPORT UTILITIES **/
+/* ***MAIN SECTION - CONTACT PAGE*** */
+.contactPage .wrapper .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactPage .wrapper .contactForm .formWrapper {
+  width: 70%;
+  padding: 80px 20px;
+}
+.contactPage .wrapper .contactForm .formWrapper form {
+  width: 70%;
+  float: right;
+}
+.contactPage .wrapper .contactForm .formWrapper form input[type=text],
+.contactPage .wrapper .contactForm .formWrapper form input[type=email],
+.contactPage .wrapper .contactForm .formWrapper form textarea {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #333333;
+  background-color: #F6F6F6;
+  border: none;
+  min-height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.contactPage .wrapper .contactForm .formWrapper form input[id=userName], .contactPage .wrapper .contactForm .formWrapper form [id=userEmail] {
+  width: 49%;
+}
+.contactPage .wrapper .contactForm .formWrapper form input[id=subject] {
+  width: 99%;
+}
+.contactPage .wrapper .contactForm .formWrapper form textarea {
+  width: 99%;
+  min-height: 200px;
+  resize: none;
+}
+.contactPage .wrapper .contactForm .formWrapper form button[type=submit] {
+  background-color: transparent;
+  color: #6bb102;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contactPage .wrapper .contactForm .formWrapper form button[type=submit]:hover {
+  color: #2E2E2E;
+}
+.contactPage .wrapper .contactForm .formWrapper h2 {
+  text-align: left;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.contactPage .wrapper .contactForm .detailsWrapper {
+  width: 30%;
+  background-color: #F6F6F6;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  margin: 40px 20px;
+  width: 65%;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails h2,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours h2,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo h2 {
+  text-transform: uppercase;
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails h3,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours h3,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo h3 {
+  text-transform: uppercase;
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails p,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours p,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo p {
+  margin: 0;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails p span,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours p span,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo p span {
+  color: #2E2E2E;
+  font-family: Raleway ", sans-serif";
 }
 
 html {
@@ -876,6 +1000,10 @@ footer .wrapper .topFooter .subscribe {
   .nutrition .wrapper q::before {
     left: 20px;
   }
+  /* *** CONTACT FORM FOR MEDIUM SCREENS - CONTACT PAGE *** */
+  .contactPage .wrapper .contactForm .formWrapper form {
+    width: 100%;
+  }
 }
 /* ***LANDSCAPE PHONES AND DOWN*** */
 @media (max-width: 480px) {
@@ -903,6 +1031,9 @@ footer .wrapper .topFooter .subscribe {
   .nutrition .wrapper q::before {
     left: 10px;
   }
+  .nutrition .wrapper q::after {
+    right: 20px;
+  }
   .nutrition .wrapper q p {
     font-size: 0.8rem;
   }
@@ -919,11 +1050,25 @@ footer .wrapper .topFooter .subscribe {
         flex-basis: 30%;
   }
   footer .wrapper .topFooter .subscribe input[type=email] {
-    min-width: 300px;
+    min-width: 280px;
   }
   footer .wrapper .bottomFooter {
     padding: 5px 10px;
     font-size: 0.5rem;
+  }
+  /* *** CONTACT FORM FOR MEDIUM SCREENS - CONTACT PAGE *** */
+  .contactPage .wrapper .contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPage .wrapper .contactForm .detailsWrapper,
+.contactPage .wrapper .contactForm .formWrapper {
+    width: 100%;
   }
 }
 /*************************** IMPROVEMENTS **********************************/

@@ -49,8 +49,7 @@
                 cursor: pointer;
 
                 a {
-                    display: inline-block;
-                    font-size: 0.7rem;
+                    display: inline-block; 
                     color: $black;
                     text-transform: uppercase;
 
@@ -67,3 +66,8 @@
         }
     }
 } 
+
+/** BACKGROUND IMG FOR CONTACT PAGE **/
+.home .contactPage {
+    background-image: url(../assets/contact-1.jpeg);
+}

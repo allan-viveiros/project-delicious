@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/41f308cf0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="home" class="home">
+        <div class="wrapper contactPage">   
+            <!-- NAVIGATION SECTION -->
+            <div class="navigation">
+                <!-- TOGGLE BUTTON -->
+                <div class="toggle" onclick="toggleButton();">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- LOGO -->
+                <div class="logo"><h1>delicious</h1></div>
+                <!-- NAV MENUBAR -->
+                <nav id="nav">                
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#recipes">recipes</a></li>
+                        <li><a href="#nutrition">nutrition</a></li>
+                        <li><a href="#" target="_blank" class="active">blog</a></li>
+                        <li><a href="#shop">shop</a></li>
+                        <li><a href="./contact.html" target="_blank">contact</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"><span class="sr-only">Shopping bag</span></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-search" aria-hidden="true"><span class="sr-only">Search on page</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>         
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="wrapper">
+                <h2>main section</h2>                  
+        </div>        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrapper">
+            <div class="topFooter">
+                <!-- ADDRESS -->
+                <div class="address">
+                    <h2>delicious</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, numquam!</p>
+                    <hr>
+                    <address>
+                        A delicious restaurant
+                        Toronto, Ontario
+                    </address>
+                    <hr>
+                    <p>yum@food.com</p>
+                    <hr>
+                    <P>+1 234 567 8910</P>
+                </div>
+
+                <!-- RECENT POSTS -->
+                <div class="recentPosts">
+                    <h3>recent posts</h3>
+                    <ul>
+                        <li><a href="#">Beetroot water spinach okra water</a></li>
+                        <li><a href="#">Chestnut ricebean pea catsear courgette</a></li>
+                        <li><a href="#">Summer purslane spinach arugula pea</a></li>
+                        <li><a href="#">Tatsoi aubergine spring onion bush</a></li>
+                        <li><a href="#">Tomato kale radicchio turnip chicory</a></li>
+                        <li><a href="#">Salsify pea sprouts fava bean</a></li>
+                    </ul>
+                </div>
+                
+                <!-- SUBSCRIBE -->
+                <div class="subscribe">
+                    <h3>subscribe now</h3>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+
+                    <label for="email" class="sr-only" hidden>Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button><i class="fa fa-arrow-right"></i></button>
+
+                    <div class="socialMedia">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"><span class="sr-only">Facebook</span></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"><span class="sr-only">Instagram</span></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="bottomFooter">
+                <p>Copyright © 2023 by <span>Allan Viveiros</span> All Rights Reserved</p>
+            </div>
+        </div>        
+    </footer>
+
+    <!-- JAVASCRIPT TO TOGGLE MENU -->
+    <script type="text/javascript">
+        function toggleButton() {
+            var navBar = document.getElementById("nav");
+            navBar.classList.toggle('show');
+        }
+    </script>
+    
+</body>
+</html>
