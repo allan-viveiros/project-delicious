@@ -1,0 +1,146 @@
+/**IMPORT UTILITIES **/
+@use "./utilities" as *;
+
+
+/* ***FOOTER SECTION*** */
+footer .wrapper {
+    background-color: $blackTwo;
+    padding: 0;
+    @include footing($brownGrey);
+
+    .topFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+
+        .address {
+            flex-basis: 30%;
+            // border: 1px solid palevioletred;
+
+            h2 {
+                margin: 0;
+                @include footerHeading($green);
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            hr {
+                width: 90%;
+                margin: 0;
+                padding: 0;
+                color: #99999946;
+            }
+        }
+
+        .recentPosts {
+            flex-basis: 38%;
+            // border: 1px solid yellow;
+
+            h3 {
+                margin: 0;
+                @include footerHeading($bgWhite);
+                font-size: 0.7rem;
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    border-top: 1px solid #99999946;
+
+                    &:first-child {
+                        border: none;
+                    }
+
+                    a {
+                        color: $brownGrey;
+
+                        &:hover {
+                            color: $bgWhite;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe {
+            flex-basis: 28%;
+            // border: 1px solid orangered;
+
+            h3 {
+                margin: 0;
+                @include footerHeading($bgWhite);
+                font-size: 0.7rem;
+            }
+
+            input[type=email] {
+                display: inline;
+                margin: 0;
+                padding: 5px 10px;
+                border: none;
+                background-color: #99999977;
+                color: $bgWhite;
+                min-height: 35px;
+                max-width: 180px;
+            }
+            
+            button {
+                margin: 0;
+                border: none;
+                padding: 7px;
+                background-color: $green;
+                color: $bgWhite;
+                position: relative;
+                left: -5px;
+                min-height: 35px;
+                min-width: 35px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $bgGreen;
+                    color: $black;
+                }
+            }
+
+            .socialMedia {
+                margin-top: 10px;                
+                ul {
+                    border-top: 1px solid #99999977;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+
+                    // border: 1px solid blue;   
+
+                    li {
+                        flex-basis: 10%;
+                        a {
+                            color: $bgWhite;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomFooter {
+        background-color: $black;
+        width: 100%;
+        min-height: 50px;
+        margin: 0;
+        padding-left: 50px;
+
+        p {
+            margin: 0;
+            padding: 0;    
+            
+            span {
+                color: $green;
+            }
+        }
+    }    
+}

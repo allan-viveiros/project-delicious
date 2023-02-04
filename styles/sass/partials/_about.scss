@@ -1,0 +1,55 @@
+/**IMPORT UTILITIES **/
+@use "./utilities" as *;
+
+/* ***ABOUT SECTION*** */
+.about { 
+    article {
+        width: 60%;
+        margin: 0 auto;
+        padding: 80px 10px;
+        // border: 1px solid blue;
+
+        figure {
+            margin: 0 auto;
+            width: 65%;
+            // border: 1px solid orangered;
+
+            .topImg {
+                width: 20%;
+                position: relative;
+                float: right;
+                top: 30px;
+                right: -30px;
+                // border: 1px solid green;
+            }
+        }
+
+        .text {
+            text-align: center;
+
+            h3 {
+                text-transform: uppercase;
+                margin: 30px 0 0 0;            
+            }
+
+            p {
+                @include bodyText($brownGrey);
+            }
+        }
+    }
+
+    /* ***ABOUT SECTION - GALLERY*** */
+    .galleryWrapper ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        // border: 1px solid orange;
+
+        li {
+            flex-basis: 33.3%;
+        }
+    }
+}

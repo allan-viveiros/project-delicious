@@ -1,4 +1,487 @@
+/** IMPORT PARTIALS **/
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap");
+/* ***GLOBAL VARIABLES*** */
+/* ***GLOBAL MIXINS*** */
+/* Title text */
+/* Quotes */
+/* Footer heading */
+/* Body Style */
+/* Body Text */
+/* Footing */
+/**IMPORT UTILITIES **/
+/* ***HEADER STYLES*** */
+.home .wrapper {
+  background-image: url(../assets/home-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  padding: 10px 20px;
+}
+.home .wrapper .navigation {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.home .wrapper .navigation .logo {
+  float: left;
+}
+.home .wrapper .navigation .logo h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem; /* 46px */
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  color: #2E2E2E;
+  text-transform: uppercase;
+}
+.home .wrapper .navigation .toggle {
+  display: none;
+  width: 35px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+}
+.home .wrapper .navigation .toggle span {
+  width: 100%;
+  height: 2px;
+  background-color: #2E2E2E;
+  float: left;
+  margin-bottom: 8px;
+}
+.home .wrapper .navigation nav {
+  display: block;
+  float: right;
+}
+.home .wrapper .navigation nav ul li {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.home .wrapper .navigation nav ul li a {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #2E2E2E;
+  text-transform: uppercase;
+}
+.home .wrapper .navigation nav ul li a:hover {
+  display: inline-block;
+  color: #6bb102;
+}
+.home .wrapper .navigation nav ul li a.active {
+  color: #6bb102;
+}
+
+/**IMPORT UTILITIES **/
+/* ***RECIPES SECTION*** */
+.recipes article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+.recipes article .text {
+  width: 50%;
+  text-align: center;
+  padding: 50px 20px;
+}
+.recipes article .text h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #2E2E2E;
+}
+.recipes article .text p {
+  margin: 20px 0;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.recipes article .text button {
+  margin: 0;
+  border: 0;
+  padding: 5px 20px;
+  background-color: #6bb102;
+  text-transform: uppercase;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: white;
+}
+.recipes article figure {
+  width: 50%;
+  height: auto;
+}
+.recipes article figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/**IMPORT UTILITIES **/
+/* ***SHOP SECTION*** */
+.shop article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.shop article .text {
+  width: 50%;
+  background-color: #F6F6F6;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.shop article .text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+.shop article .text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 45%;
+  margin: 10px 0;
+}
+.shop article .text ul li .icon {
+  margin: 15px 5px;
+  padding: 5px;
+}
+.shop article .text ul li .icon i {
+  color: #2E2E2E;
+  font-size: 1rem;
+}
+.shop article .text ul li .textShop h3 {
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #2E2E2E;
+}
+.shop article .text ul li .textShop p {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.shop article figure {
+  width: 50%;
+  height: auto;
+}
+.shop article figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/**IMPORT UTILITIES **/
+/* ***ABOUT SECTION*** */
+.about {
+  /* ***ABOUT SECTION - GALLERY*** */
+}
+.about article {
+  width: 60%;
+  margin: 0 auto;
+  padding: 80px 10px;
+}
+.about article figure {
+  margin: 0 auto;
+  width: 65%;
+}
+.about article figure .topImg {
+  width: 20%;
+  position: relative;
+  float: right;
+  top: 30px;
+  right: -30px;
+}
+.about article .text {
+  text-align: center;
+}
+.about article .text h3 {
+  text-transform: uppercase;
+  margin: 30px 0 0 0;
+}
+.about article .text p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.about .galleryWrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.about .galleryWrapper ul li {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+/**IMPORT UTILITIES **/
+/* ***NUTRITION SECTION*** */
+.nutrition .wrapper {
+  background-color: #DDED9A;
+  text-align: center;
+  padding: 50px;
+}
+.nutrition .wrapper h2 {
+  text-transform: uppercase;
+  color: #2E2E2E;
+  margin: 0;
+}
+.nutrition .wrapper q {
+  display: inline-block;
+  font-size: 4rem;
+  color: #F6F6F6;
+  font-family: "Lora", serif;
+  font-style: italic;
+  margin-top: 20px;
+}
+.nutrition .wrapper q::before {
+  content: open-quote;
+  position: relative;
+  float: left;
+  top: 10px;
+  left: 45px;
+}
+.nutrition .wrapper q::after {
+  content: close-quote;
+  float: right;
+  position: relative;
+  right: 45px;
+  top: -10px;
+}
+.nutrition .wrapper q p {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 1.2rem; /* 24px */
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #333333;
+  font-weight: 100;
+}
+.nutrition .wrapper button {
+  background-color: transparent;
+  color: #F6F6F6;
+  margin: 0 20px;
+  border: 0;
+  padding: 5px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nutrition .wrapper button.back {
+  color: rgba(246, 246, 246, 0.568627451);
+}
+
+/**IMPORT UTILITIES **/
+/* ***FOOTER SECTION*** */
+footer .wrapper {
+  background-color: #333333;
+  padding: 0;
+  font-family: "Lora", serif;
+  font-size: 0.65rem; /* 13px */
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+footer .wrapper .topFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px;
+}
+footer .wrapper .topFooter .address {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+footer .wrapper .topFooter .address h2 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #6bb102;
+  text-transform: uppercase;
+}
+footer .wrapper .topFooter .address p {
+  margin: 0;
+  padding: 0;
+}
+footer .wrapper .topFooter .address hr {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  color: rgba(153, 153, 153, 0.2745098039);
+}
+footer .wrapper .topFooter .recentPosts {
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+}
+footer .wrapper .topFooter .recentPosts h3 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+footer .wrapper .topFooter .recentPosts ul {
+  margin-top: 20px;
+}
+footer .wrapper .topFooter .recentPosts ul li {
+  border-top: 1px solid rgba(153, 153, 153, 0.2745098039);
+}
+footer .wrapper .topFooter .recentPosts ul li:first-child {
+  border: none;
+}
+footer .wrapper .topFooter .recentPosts ul li a {
+  color: #999999;
+}
+footer .wrapper .topFooter .recentPosts ul li a:hover {
+  color: #F6F6F6;
+}
+footer .wrapper .topFooter .subscribe {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
+footer .wrapper .topFooter .subscribe h3 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+footer .wrapper .topFooter .subscribe input[type=email] {
+  display: inline;
+  margin: 0;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgba(153, 153, 153, 0.4666666667);
+  color: #F6F6F6;
+  min-height: 35px;
+  max-width: 180px;
+}
+footer .wrapper .topFooter .subscribe button {
+  margin: 0;
+  border: none;
+  padding: 7px;
+  background-color: #6bb102;
+  color: #F6F6F6;
+  position: relative;
+  left: -5px;
+  min-height: 35px;
+  min-width: 35px;
+  cursor: pointer;
+}
+footer .wrapper .topFooter .subscribe button:hover {
+  background-color: #DDED9A;
+  color: #2E2E2E;
+}
+footer .wrapper .topFooter .subscribe .socialMedia {
+  margin-top: 10px;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul {
+  border-top: 1px solid rgba(153, 153, 153, 0.4666666667);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul li a {
+  color: #F6F6F6;
+}
+footer .wrapper .bottomFooter {
+  background-color: #2E2E2E;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  padding-left: 50px;
+}
+footer .wrapper .bottomFooter p {
+  margin: 0;
+  padding: 0;
+}
+footer .wrapper .bottomFooter p span {
+  color: #6bb102;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -232,14 +715,6 @@ html {
     font-family: 'Lora', serif;
     font-family: 'Raleway', sans-serif;
 */
-/* ***GLOBAL VARIABLES*** */
-/* ***GLOBAL MIXINS*** */
-/* Title text */
-/* Quotes */
-/* Footer heading */
-/* Body Style */
-/* Body Text */
-/* Footing */
 /* **GLOBAL STYLES** */
 html {
   font-size: 125%;
@@ -285,477 +760,6 @@ hr {
   color: #6bb102;
   width: 10%;
   text-align: center;
-}
-
-/* ***HEADER STYLES*** */
-.home .wrapper {
-  background-image: url(../assets/home-1.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 65vh;
-  padding: 10px 20px;
-}
-.home .wrapper .navigation {
-  display: inline-block;
-  width: 100%;
-  position: relative;
-}
-.home .wrapper .navigation .logo {
-  float: left;
-}
-.home .wrapper .navigation .logo h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 2.3rem; /* 46px */
-  line-height: 24px;
-  letter-spacing: 1.1px;
-  color: #2E2E2E;
-  text-transform: uppercase;
-}
-.home .wrapper .navigation .toggle {
-  display: none;
-  width: 35px;
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  cursor: pointer;
-}
-.home .wrapper .navigation .toggle span {
-  width: 100%;
-  height: 2px;
-  background-color: #2E2E2E;
-  float: left;
-  margin-bottom: 8px;
-}
-.home .wrapper .navigation nav {
-  display: block;
-  float: right;
-}
-.home .wrapper .navigation nav ul li {
-  display: inline-block;
-  padding: 5px;
-  cursor: pointer;
-}
-.home .wrapper .navigation nav ul li a {
-  display: inline-block;
-  font-size: 0.7rem;
-  color: #2E2E2E;
-  text-transform: uppercase;
-}
-.home .wrapper .navigation nav ul li a:hover {
-  display: inline-block;
-  color: #6bb102;
-}
-.home .wrapper .navigation nav ul li a.active {
-  color: #6bb102;
-}
-
-/* ***RECIPES SECTION*** */
-.recipes article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0;
-}
-.recipes article .text {
-  width: 50%;
-  text-align: center;
-  padding: 50px 20px;
-}
-.recipes article .text h2 {
-  margin-top: 50px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  color: #2E2E2E;
-}
-.recipes article .text p {
-  margin: 20px 0;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.recipes article .text button {
-  margin: 0;
-  border: 0;
-  padding: 5px 20px;
-  background-color: #6bb102;
-  text-transform: uppercase;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: white;
-}
-.recipes article figure {
-  width: 50%;
-  height: auto;
-}
-.recipes article figure img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* ***SHOP SECTION*** */
-.shop article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.shop article .text {
-  width: 50%;
-  background-color: #F6F6F6;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.shop article .text ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px;
-}
-.shop article .text ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 45%;
-  margin: 10px 0;
-}
-.shop article .text ul li .icon {
-  margin: 15px 5px;
-  padding: 5px;
-}
-.shop article .text ul li .icon i {
-  color: #2E2E2E;
-  font-size: 1rem;
-}
-.shop article .text ul li .textShop h3 {
-  text-transform: uppercase;
-  margin: 10px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  color: #2E2E2E;
-}
-.shop article .text ul li .textShop p {
-  margin: 0;
-  padding: 0;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.shop article figure {
-  width: 50%;
-  height: auto;
-}
-.shop article figure img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* ***ABOUT SECTION*** */
-.about {
-  /* ***ABOUT SECTION - GALLERY*** */
-}
-.about article {
-  width: 60%;
-  margin: 0 auto;
-  padding: 80px 10px;
-}
-.about article figure {
-  margin: 0 auto;
-  width: 65%;
-}
-.about article figure .topImg {
-  width: 20%;
-  position: relative;
-  float: right;
-  top: 30px;
-  right: -30px;
-}
-.about article .text {
-  text-align: center;
-}
-.about article .text h3 {
-  text-transform: uppercase;
-  margin: 30px 0 0 0;
-}
-.about article .text p {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.about .galleryWrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-.about .galleryWrapper ul li {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
-}
-
-/* ***NUTRITION SECTION*** */
-.nutrition .wrapper {
-  background-color: #DDED9A;
-  text-align: center;
-  padding: 50px;
-}
-.nutrition .wrapper h2 {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  color: #2E2E2E;
-  margin: 0;
-}
-.nutrition .wrapper q {
-  display: inline-block;
-  font-size: 4rem;
-  color: #F6F6F6;
-  font-family: "Lora", serif;
-  font-style: italic;
-}
-.nutrition .wrapper q::before {
-  content: open-quote;
-  position: relative;
-  float: left;
-  top: 10px;
-  left: 45px;
-}
-.nutrition .wrapper q::after {
-  content: close-quote;
-  float: right;
-  position: relative;
-  right: 45px;
-  top: -10px;
-}
-.nutrition .wrapper q p {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Lora", serif;
-  font-style: italic;
-  font-size: 1.2rem; /* 24px */
-  line-height: 36px;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: #333333;
-}
-.nutrition .wrapper button {
-  background-color: transparent;
-  color: #F6F6F6;
-  margin: 0 20px;
-  border: 0;
-  padding: 5px;
-  font-size: 2.3rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-.nutrition .wrapper button.back {
-  color: rgba(246, 246, 246, 0.568627451);
-}
-
-/* ***FOOTER SECTION*** */
-footer .wrapper {
-  background-color: #333333;
-  padding: 0;
-  font-family: "Lora", serif;
-  font-size: 0.65rem; /* 13px */
-  line-height: 44px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-footer .wrapper .topFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 50px;
-}
-footer .wrapper .topFooter .address {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-footer .wrapper .topFooter .address h2 {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #6bb102;
-  text-transform: uppercase;
-}
-footer .wrapper .topFooter .address p {
-  margin: 0;
-  padding: 0;
-}
-footer .wrapper .topFooter .address hr {
-  width: 90%;
-  margin: 0;
-  padding: 0;
-  color: rgba(153, 153, 153, 0.2745098039);
-}
-footer .wrapper .topFooter .recentPosts {
-  -ms-flex-preferred-size: 38%;
-      flex-basis: 38%;
-}
-footer .wrapper .topFooter .recentPosts h3 {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #F6F6F6;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-footer .wrapper .topFooter .recentPosts ul {
-  margin-top: 20px;
-}
-footer .wrapper .topFooter .recentPosts ul li {
-  border-top: 1px solid rgba(153, 153, 153, 0.2745098039);
-}
-footer .wrapper .topFooter .recentPosts ul li:first-child {
-  border: none;
-}
-footer .wrapper .topFooter .recentPosts ul li a {
-  color: #999999;
-}
-footer .wrapper .topFooter .recentPosts ul li a:hover {
-  color: #F6F6F6;
-}
-footer .wrapper .topFooter .subscribe {
-  -ms-flex-preferred-size: 28%;
-      flex-basis: 28%;
-}
-footer .wrapper .topFooter .subscribe h3 {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #F6F6F6;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-footer .wrapper .topFooter .subscribe input[type=email] {
-  display: inline;
-  margin: 0;
-  padding: 5px 10px;
-  border: none;
-  background-color: rgba(153, 153, 153, 0.4666666667);
-  color: #F6F6F6;
-  min-height: 35px;
-  max-width: 180px;
-}
-footer .wrapper .topFooter .subscribe button {
-  margin: 0;
-  border: none;
-  padding: 7px;
-  background-color: #6bb102;
-  color: #F6F6F6;
-  position: relative;
-  left: -5px;
-  min-height: 35px;
-  min-width: 35px;
-  cursor: pointer;
-}
-footer .wrapper .topFooter .subscribe button:hover {
-  background-color: #DDED9A;
-  color: #2E2E2E;
-}
-footer .wrapper .topFooter .subscribe .socialMedia {
-  margin-top: 10px;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul {
-  border-top: 1px solid rgba(153, 153, 153, 0.4666666667);
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul li {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul li a {
-  color: #F6F6F6;
-}
-footer .wrapper .bottomFooter {
-  background-color: #2E2E2E;
-  width: 100%;
-  min-height: 50px;
-  margin: 0;
-  padding-left: 50px;
-}
-footer .wrapper .bottomFooter p {
-  margin: 0;
-  padding: 0;
-}
-footer .wrapper .bottomFooter p span {
-  color: #6bb102;
 }
 
 /* *************** MEDIA QUERIES ************* */

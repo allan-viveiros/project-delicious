@@ -1,0 +1,48 @@
+/**IMPORT UTILITIES **/
+@use "./utilities" as *;
+
+
+/* ***RECIPES SECTION*** */
+.recipes article {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+    .text {
+        // border: 1px solid purple;
+        width: 50%;
+        text-align: center;        
+        padding: 50px 20px;
+
+        h2 {
+            margin-top: 50px;
+            text-transform: uppercase;
+            @include bodyStyle($black);
+        }
+
+        p {
+            margin: 20px 0;
+            @include bodyText($brownGrey);
+        }
+
+        button {
+            margin: 0;
+            border: 0;
+            padding: 5px 20px;
+            background-color: $green;
+            text-transform: uppercase;
+            @include bodyText(white);
+        }        
+    }
+
+    figure {
+        // border: 1px solid red;
+        width: 50%;
+        height: auto;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }        
+    }
+}

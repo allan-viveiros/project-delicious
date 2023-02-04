@@ -1,0 +1,64 @@
+/**IMPORT UTILITIES **/
+@use "./utilities" as *;
+
+/* ***NUTRITION SECTION*** */
+.nutrition .wrapper {
+    background-color: $bgGreen;
+    text-align: center;
+    padding: 50px;
+
+    h2 {
+        text-transform: uppercase;
+        color: $black;
+        margin: 0;
+    }
+
+    q {
+        display: inline-block;
+        font-size: 4rem;
+        color: $bgWhite;
+        font-family: 'Lora', serif;
+        font-style: italic;
+        margin-top: 20px;
+        // border: 1px solid blue;
+
+        &::before {
+            content: open-quote;        
+            position: relative;
+            float: left;
+            top: 10px;
+            left: 45px;
+        }
+
+        &::after {
+            content: close-quote;      
+            float: right;
+            position: relative;
+            right: 45px;
+            top: -10px;
+        }
+
+        p {
+            width: 80%;
+            margin: 0 auto; 
+            @include quotes($blackTwo);
+            font-weight: 100;
+            // border: 1px solid red;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        color: $bgWhite;
+        margin: 0 20px;
+        border: 0;
+        padding: 5px;
+        font-size: 2.3rem;      
+        font-weight: bold;  
+        cursor: pointer;
+    }
+
+    button.back {
+        color: #f6f6f691;
+    }
+}

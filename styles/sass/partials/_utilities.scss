@@ -1,0 +1,69 @@
+/* ***GLOBAL VARIABLES*** */
+$bgWhite: #F6F6F6;
+$brownGrey: #999999;
+$black: #2E2E2E;
+$blackTwo: #333333;
+$green: #6bb102;
+$bgGreen: #DDED9A;
+
+/* ***GLOBAL MIXINS*** */
+/* Title text */
+@mixin titleText($color) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem; /* 46px */
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    color: $color;
+    text-transform: uppercase;
+}
+
+/* Quotes */
+@mixin quotes($color) {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.2rem; /* 24px */
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: $color;
+}
+
+/* Footer heading */
+@mixin footerHeading($color) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem; /* 18px */
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: $color;
+    text-transform: uppercase;
+}
+
+/* Body Style */
+@mixin bodyStyle($color) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem; /* 18px */
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: $color;
+}
+
+/* Body Text */
+@mixin bodyText($color) {
+    font-family: 'Lora', serif;
+    font-size: 0.7rem; /* 14px */
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: $color;
+}
+
+/* Footing */
+@mixin footing($color) {
+    font-family: 'Lora', serif;
+    font-size: 0.65rem; /* 13px */
+    line-height: 44px;
+    letter-spacing: 0.3px;
+    color: $color;
+}

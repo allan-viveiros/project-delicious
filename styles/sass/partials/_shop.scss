@@ -1,0 +1,67 @@
+/**IMPORT UTILITIES **/
+@use "./utilities" as *;
+
+/* ***SHOP SECTION*** */
+.shop article {
+    display: flex;
+    flex-direction: row;
+
+    .text {
+        width: 50%;
+        background-color: $bgWhite;
+        @include bodyText($brownGrey);
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;    
+            padding: 10px;        
+
+            // border: 1px solid red;
+        }
+        ul li {
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+            margin: 10px 0;
+
+            // border: 1px solid blue;
+
+            .icon {
+                margin: 15px 5px;
+                padding: 5px;
+
+                i {
+                    color: $black;
+                    font-size: 1rem;
+                }
+            }
+
+            .textShop {
+                h3 {
+                    text-transform: uppercase;
+                    margin: 10px 0;
+                    @include bodyStyle($black);
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    @include bodyText($brownGrey);
+                }
+            }
+        }
+
+    }
+
+    figure {
+        // border: 1px solid red;
+        width: 50%;
+        height: auto;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }        
+    }
+}
