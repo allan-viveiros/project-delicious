@@ -33,6 +33,7 @@ $bgGreen: #DDED9A;
     line-height: 24px;
     letter-spacing: 1.1px;
     color: $color;
+    text-transform: uppercase;
 }
 
 /* Quotes */
@@ -54,6 +55,7 @@ $bgGreen: #DDED9A;
     line-height: 24px;
     letter-spacing: 0.5px;
     color: $color;
+    text-transform: uppercase;
 }
 
 /* Body Style */
@@ -84,14 +86,9 @@ $bgGreen: #DDED9A;
     color: $color;
 }
 
-
-
 /* **GLOBAL STYLES** */
 html {
     font-size: 125%;  
-}
-
-body {
     @include bodyStyle($blackTwo);
 }
 
@@ -126,12 +123,13 @@ figure {
     border: 1px solid greenyellow;
 }
 
-/* ***HEADER STYLES*** */
-.home h1 {
-    @include titleText($black);
-    text-transform: uppercase;
+hr {
+    color:$green;
+    width: 10%;
+    text-align: center;
 }
 
+/* ***HEADER STYLES*** */
 .home .wrapper {
     background-image: url(../assets/home-1.jpeg);
     background-repeat: no-repeat;
@@ -139,65 +137,64 @@ figure {
     background-size: cover;
     height: 65vh;
     padding: 10px 20px;
-}
 
-.home .wrapper .navigation {
-    display: inline-block;
-    width: 100%;
-    position: relative;
+    .navigation {
+        display: inline-block;
+        width: 100%;
+        position: relative;
 
-    /* border: 1px solid red;
-    background-color: #ff0; */
-}
+        .logo {
+            float: left;
+            h1 {
+                @include titleText($black);
+            }            
+        }
 
-.home .wrapper .navigation .toggle {
-    display: none;
-    width: 35px;
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    cursor: pointer;
-}
+        .toggle {
+            display: none;
+            width: 35px;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+            cursor: pointer;
 
-.home .wrapper .navigation .toggle span {
-    /* display: inline-block; */
-    width: 100%;
-    height: 2px;
-    background-color: $black;
-    float: left;
-    margin-bottom: 8px;
-}
+            span {
+                width: 100%;
+                height: 2px;
+                background-color: $black;
+                float: left;
+                margin-bottom: 8px;
+            }
+        }
 
-.home .wrapper .navigation .logo {
-    float: left;
-}
+        nav {
+            display: block;
+            float: right;
 
-.home .wrapper .navigation nav {
-    display: block;
-    float: right;   
-}
+            ul li {
+                display: inline-block;
+                padding: 5px;
+                cursor: pointer;
 
-.home .wrapper .navigation nav ul li {
-    display: inline-block;
-    padding: 5px;
-    cursor: pointer;
-}
+                a {
+                    display: inline-block;
+                    font-size: 0.7rem;
+                    color: $black;
+                    text-transform: uppercase;
 
-.home .wrapper .navigation nav ul li a {
-    display: inline-block;
-    font-size: 0.7rem;
-    color: $black;
-    text-transform: uppercase;
-}
+                    &:hover {
+                        display: inline-block;
+                        color: $green;
+                    }                    
+                }
 
-.home .wrapper .navigation nav ul li:hover {
-    background-color: $green;
-}
-
-.home .wrapper .navigation nav ul li a:hover {
-    display: inline-block;
-    color: white;
-}
+                a.active {
+                    color: $green;
+                }
+            }
+        }
+    }
+} 
 
 /* ***RECIPES SECTION*** */
 .recipes article {
@@ -215,12 +212,6 @@ figure {
             margin-top: 50px;
             text-transform: uppercase;
             @include bodyStyle($black);
-        }
-
-        hr {
-            color:$green;
-            width: 10%;
-            text-align: center;
         }
 
         p {
@@ -279,6 +270,12 @@ figure {
 
             .icon {
                 margin: 15px 5px;
+                padding: 5px;
+
+                i {
+                    color: $black;
+                    font-size: 1rem;
+                }
             }
 
             .textShop {
@@ -310,48 +307,259 @@ figure {
 }
 
 /* ***ABOUT SECTION*** */
-.about article {
-    width: 60%;
-    margin: 0 auto;
-    padding: 80px 10px;
-
-    // border: 1px solid blue;
-
-    figure {
+.about { 
+    article {
+        width: 60%;
         margin: 0 auto;
-        width: 65%;
+        padding: 80px 10px;
+        // border: 1px solid blue;
 
-        // border: 1px solid orangered;
+        figure {
+            margin: 0 auto;
+            width: 65%;
+            // border: 1px solid orangered;
 
-        .topImg {
-            width: 20%;
-            position: relative;
-            float: right;
-            top: 30px;
-            right: -30px;
+            .topImg {
+                width: 20%;
+                position: relative;
+                float: right;
+                top: 30px;
+                right: -30px;
+                // border: 1px solid green;
+            }
+        }
 
-            // border: 1px solid green;
+        .text {
+            text-align: center;
+
+            h3 {
+                text-transform: uppercase;
+                margin: 30px 0 0 0;            
+            }
+
+            p {
+                @include bodyText($brownGrey);
+            }
         }
     }
 
-    .text {
-        text-align: center;
+    /* ***ABOUT SECTION - GALLERY*** */
+    .galleryWrapper ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        // border: 1px solid orange;
 
-        h3 {
-            text-transform: uppercase;
-            margin: 0;            
+        li {
+            flex-basis: 33.3%;
+        }
+    }
+}
+
+/* ***NUTRITION SECTION*** */
+.nutrition .wrapper {
+    background-color: $bgGreen;
+    text-align: center;
+    padding: 50px;
+
+    h2 {
+        text-transform: uppercase;
+        @include bodyStyle($black);
+        margin: 0;
+    }
+
+    q {
+        display: inline-block;
+        font-size: 4rem;
+        color: $bgWhite;
+        font-family: 'Lora', serif;
+        font-style: italic;
+        // border: 1px solid blue;
+
+        &::before {
+            content: open-quote;        
+            position: relative;
+            float: left;
+            top: 10px;
+            left: 45px;
         }
 
-        hr {
-            color:$green;
-            width: 10%;
-            text-align: center;
+        &::after {
+            content: close-quote;      
+            float: right;
+            position: relative;
+            right: 45px;
+            top: -10px;
         }
 
         p {
-            @include bodyText($brownGrey);
+            width: 80%;
+            margin: 0 auto; 
+            @include quotes($blackTwo);
+            // border: 1px solid red;
         }
     }
+
+    button {
+        background-color: transparent;
+        color: $bgWhite;
+        margin: 0 20px;
+        border: 0;
+        padding: 5px;
+        font-size: 2.3rem;      
+        font-weight: bold;  
+        cursor: pointer;
+    }
+
+    button.back {
+        color: #f6f6f691;
+    }
+}
+
+/* ***FOOTER SECTION*** */
+footer .wrapper {
+    background-color: $blackTwo;
+    padding: 0;
+    @include footing($brownGrey);
+
+    .topFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+
+        .address {
+            flex-basis: 30%;
+            // border: 1px solid palevioletred;
+
+            h2 {
+                margin: 0;
+                @include footerHeading($green);
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            hr {
+                width: 90%;
+                margin: 0;
+                padding: 0;
+                color: #99999946;
+            }
+        }
+
+        .recentPosts {
+            flex-basis: 38%;
+            // border: 1px solid yellow;
+
+            h3 {
+                margin: 0;
+                @include footerHeading($bgWhite);
+                font-size: 0.7rem;
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    border-top: 1px solid #99999946;
+
+                    &:first-child {
+                        border: none;
+                    }
+
+                    a {
+                        color: $brownGrey;
+
+                        &:hover {
+                            color: $bgWhite;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe {
+            flex-basis: 28%;
+            // border: 1px solid orangered;
+
+            h3 {
+                margin: 0;
+                @include footerHeading($bgWhite);
+                font-size: 0.7rem;
+            }
+
+            input[type=email] {
+                display: inline;
+                margin: 0;
+                padding: 5px 10px;
+                border: none;
+                background-color: #99999977;
+                color: $bgWhite;
+                min-height: 35px;
+                max-width: 180px;
+            }
+            
+            button {
+                margin: 0;
+                border: none;
+                padding: 7px;
+                background-color: $green;
+                color: $bgWhite;
+                position: relative;
+                left: -5px;
+                min-height: 35px;
+                min-width: 35px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $bgGreen;
+                    color: $black;
+                }
+            }
+
+            .socialMedia {
+                margin-top: 10px;                
+                ul {
+                    border-top: 1px solid #99999977;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+
+                    // border: 1px solid blue;   
+
+                    li {
+                        flex-basis: 10%;
+                        a {
+                            color: $bgWhite;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomFooter {
+        background-color: $black;
+        width: 100%;
+        min-height: 50px;
+        margin: 0;
+        padding-left: 50px;
+
+        p {
+            margin: 0;
+            padding: 0;    
+            
+            span {
+                color: $green;
+            }
+        }
+    }    
 }
 
 /* *************** MEDIA QUERIES ************* */
@@ -373,14 +581,21 @@ figure {
             margin-top: 30px;
 
             ul li {
-                padding: 15px 0;
+                padding: 0;
                 width: 100%;  
                 text-align: center;
                 background-color: #dced9aef;
-                // border-top: 1px solid $black;      
+                // border-top: 1px solid $black;   
                 
                 a {
+                    width: 100%;
+                    padding: 10px;
                     @include bodyStyle($black);
+
+                    &:hover {
+                        background-color: $green;
+                        color: $bgWhite;
+                    }
                 }
             }
         }
@@ -389,11 +604,31 @@ figure {
             display: block;
         }        
     }
+
+    /* ***FOOTER TO SMALL DESKTOPS*** */
+    footer .wrapper .topFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px;
+
+        .address, 
+        .recentPosts, 
+        .subscribe {
+            margin: 10px auto;
+            width: 80%;
+            flex-basis: 30%;
+        }
+
+        .subscribe input[type=email] {
+            min-width: 300px;
+        }
+    }
 }
 
 /* ***LANDSCAPE PHONE TO PORTRAIT TABLE*** */
 @media (max-width: 768px) {
-    /* ***RECIPES FOR SMALL SCREENS*** */
+    /* ***RECIPES FOR MEDIUM SCREENS*** */
     .recipes article {
         display: flex;
         flex-direction: column-reverse;
@@ -415,7 +650,7 @@ figure {
         }
     }
 
-    /* ***SHOP FOR SMALL SCREENS*** */
+    /* ***SHOP FOR MEDIUM SCREENS*** */
     .shop article {
         display: flex;
         flex-direction: column;
@@ -432,6 +667,77 @@ figure {
             width: 100%;
         }
     }
+
+    /* ***ABOUT SECTION FOR MEDIUM SCREENS*** */
+    .about article figure .topImg {
+        top: 20px;
+        right: -20px;      
+    }
+
+    /* *** Moving left the open quote ***  */
+    .nutrition .wrapper q::before {
+        left: 20px;       
+    } 
+}
+
+/* ***LANDSCAPE PHONES AND DOWN*** */
+@media (max-width: 480px) {
+    /* ***ABOUT SECTION FOR SMALL SCREENS*** */
+    .about article {
+        width: 85%;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        figure {
+            margin: 0 auto;
+            width: 70%;
+
+            .topImg {
+                width: 20%;
+                position: relative;
+                float: right;
+                top: 20px;
+                right: -20px;
+            }
+        }
+    }
+
+    /* ***NUTRITION SECTION FOR SMALL SCREENS*** */
+    .nutrition .wrapper {
+        padding: 20px 10px;
+
+        q {
+            &::before {
+                left: 10px;
+            }
+            p { font-size: 0.8rem; }
+        }        
+    } 
+
+    /* ***FOOTER FOR SMALL SCREENS*** */
+    footer .wrapper {
+        .topFooter {
+            margin: 10px;
+
+            .address, 
+            .recentPosts, 
+            .subscribe {
+                margin: 20px auto;
+                width: 100%;
+                flex-basis: 30%;
+            }
+
+            .subscribe input[type=email] {
+                min-width: 300px;
+            }
+        }
+        
+        .bottomFooter {
+            padding: 5px 10px;
+            font-size: 0.5rem;
+        }
+    }
+
 }
 
 
@@ -446,5 +752,15 @@ figure {
 // /* Landscape phones and down */
 // @media (max-width: 480px) {
 // }
+
+
+
+
+/*************************** IMPROVEMENTS **********************************/
+//
+// Make a mixin for the <hr> tag - ok (as a global style)
+// Include "text-transform: uppercase" on headings mixins - ok
+//
+/***************************************************************************/
 
 
