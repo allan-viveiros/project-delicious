@@ -67,7 +67,13 @@
     }
 } 
 
-/** BACKGROUND IMG FOR CONTACT PAGE **/
+/** BACKGROUND IMG FOR **CONTACT** PAGE **/
 .home .contactPage {
     background-image: url(../assets/contact-1.jpeg);
+}
+
+/** BACKGROUND IMG FOR **BLOG** PAGE **/
+.home .blogPage {
+    background-image: url(../assets/blog-1.jpeg);
+    height: 40vh;
 }

@@ -1,4 +1,5 @@
 /** IMPORT PARTIALS **/
+/** CSS SNIPPET **/
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap");
 /* ***GLOBAL VARIABLES*** */
 /* ***GLOBAL MIXINS*** */
@@ -72,9 +73,15 @@
   color: #6bb102;
 }
 
-/** BACKGROUND IMG FOR CONTACT PAGE **/
+/** BACKGROUND IMG FOR **CONTACT** PAGE **/
 .home .contactPage {
   background-image: url(../assets/contact-1.jpeg);
+}
+
+/** BACKGROUND IMG FOR **BLOG** PAGE **/
+.home .blogPage {
+  background-image: url(../assets/blog-1.jpeg);
+  height: 40vh;
 }
 
 /**IMPORT UTILITIES **/
@@ -345,7 +352,7 @@
 /* ***FOOTER SECTION*** */
 footer .wrapper {
   background-color: #333333;
-  padding: 0;
+  padding: 20px;
   font-family: "Lora", serif;
   font-size: 0.65rem; /* 13px */
   line-height: 44px;
@@ -604,6 +611,282 @@ footer .wrapper .bottomFooter p span {
 .contactPage .wrapper .contactForm .detailsWrapper .contactInfo p span {
   color: #2E2E2E;
   font-family: Raleway ", sans-serif";
+}
+
+/**IMPORT UTILITIES **/
+/* ***MAIN SECTION*** */
+/* ***RECIPE SECTION*** */
+.recipePC .recipePost {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.recipePC .recipePost h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.recipePC .recipePost .subText span {
+  font-size: 0.6rem;
+  position: relative;
+  top: -10px;
+  border-left: 1px solid #333333;
+  padding: 0 5px;
+}
+.recipePC .recipePost .subText span:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.recipePC .recipePost p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.recipePC .recipePost .articleFooter {
+  margin: 20px 0;
+  border-top: 2px solid #F6F6F6;
+  border-bottom: 2px solid #F6F6F6;
+  padding: 10px 0;
+}
+.recipePC .recipePost .articleFooter span {
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.recipePC .recipePost .articleFooter ul li {
+  display: inline;
+  margin: 0 5px 0 0;
+}
+.recipePC .recipePost .articleFooter ul li span {
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.recipePC .recipePost .articleFooter ul li a i {
+  color: #999999;
+}
+.recipePC .recipePost .articleFooter ul li a i:hover {
+  color: #2E2E2E;
+}
+
+/* ***MAIN POST SECTION*** */
+.posts .mainPost {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+.posts .mainPost .mainPostImg {
+  width: 20%;
+}
+.posts .mainPost .mainPostImg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.posts .mainPost .textPost {
+  width: 78%;
+  padding: 10px;
+  background-color: #F6F6F6;
+}
+.posts .mainPost .textPost h3 {
+  text-transform: uppercase;
+}
+.posts .mainPost .textPost p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.posts .relatedPosts {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid #F6F6F6;
+  border-top: 2px solid #F6F6F6;
+}
+.posts .relatedPosts h3 {
+  text-transform: uppercase;
+}
+.posts .relatedPosts .postGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.posts .relatedPosts .postGallery figure {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+.posts .relatedPosts .postGallery figure h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.posts .relatedPosts .postGallery figure .subText span {
+  color: #999999;
+  font-size: 0.6rem;
+  position: relative;
+  top: -15px;
+  border-left: 1px solid #333333;
+  padding: 0 5px;
+}
+.posts .relatedPosts .postGallery figure .subText span:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* ***COMMENTS SECTION*** */
+.comments .userComments {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.comments .userComments h3 {
+  text-transform: uppercase;
+}
+.comments .userComments .commentCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comments .userComments .commentCard figure {
+  -ms-flex-preferred-size: 7%;
+      flex-basis: 7%;
+  margin-bottom: 20px;
+}
+.comments .userComments .commentCard .textComment {
+  -ms-flex-preferred-size: 88%;
+      flex-basis: 88%;
+  background-color: #F6F6F6;
+  color: #2E2E2E;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  position: relative;
+  padding: 10px;
+}
+.comments .userComments .commentCard .textComment::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 0;
+  height: 0;
+  border: 33px solid transparent;
+  border-right-color: #F6F6F6;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -16.5px;
+  margin-left: -33px;
+}
+.comments .userComments .commentCard .textComment span {
+  font-weight: 100;
+}
+.comments .userComments .commentCard .textComment p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+.comments .leaveComment {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.comments .leaveComment h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.comments .leaveComment p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  margin: 0;
+}
+.comments .leaveComment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comments .leaveComment form input[type=text],
+.comments .leaveComment form input[type=email],
+.comments .leaveComment form textarea {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  background-color: white;
+  border: 2px solid #F6F6F6;
+  min-height: 30px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  color: #999999;
+  font-weight: bold;
+}
+.comments .leaveComment form input[type=text],
+.comments .leaveComment form input[type=email] {
+  width: 31%;
+}
+.comments .leaveComment form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+.comments .leaveComment form button {
+  background-color: #6bb102;
+  margin: 0;
+  border: 0;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+.comments .leaveComment form button:hover {
+  color: #2E2E2E;
 }
 
 html {
@@ -877,7 +1160,6 @@ figure {
   width: 95%;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid greenyellow;
 }
 
 hr {
@@ -1004,6 +1286,58 @@ footer .wrapper .topFooter .subscribe {
   .contactPage .wrapper .contactForm .formWrapper form {
     width: 100%;
   }
+  /* ***BLOG PAGE - POST - FOR MEDIUM SCREENS*** */
+  .posts .mainPost {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0;
+  }
+  .posts .mainPost .mainPostImg {
+    height: 20%;
+    margin: 10px auto;
+  }
+  .posts .mainPost .mainPostImg img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .posts .mainPost .textPost {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  /* ***BLOG PAGE - RELATED POSTS - FOR MEDIUM SCREENS*** */
+  .posts .relatedPosts .postGallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* ***BLOG PAGE - USER COMMENTS - FOR MEDIUM SCREENS*** */
+  .comments .userComments {
+    width: 100%;
+  }
+  .comments .userComments .commentCard .textComment::after {
+    border: 17px solid transparent;
+    border-right-color: #F6F6F6;
+    margin-top: -8.5px;
+    margin-left: -30px;
+  }
 }
 /* ***LANDSCAPE PHONES AND DOWN*** */
 @media (max-width: 480px) {
@@ -1069,6 +1403,9 @@ footer .wrapper .topFooter .subscribe {
   .contactPage .wrapper .contactForm .detailsWrapper,
 .contactPage .wrapper .contactForm .formWrapper {
     width: 100%;
+  }
+  .comments .userComments .commentCard figure {
+    padding-top: 20px;
   }
 }
 /*************************** IMPROVEMENTS **********************************/

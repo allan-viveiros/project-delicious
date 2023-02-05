@@ -5,7 +5,7 @@
 /* ***FOOTER SECTION*** */
 footer .wrapper {
     background-color: $blackTwo;
-    padding: 0;
+    padding: 20px;
     @include footing($brownGrey);
 
     .topFooter {
