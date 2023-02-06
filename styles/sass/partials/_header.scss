@@ -56,7 +56,18 @@
                     &:hover {
                         display: inline-block;
                         color: $green;
-                    }                    
+                    }   
+                    
+                    i .itemQty {
+                        background-color: $green;
+                        color: $bgWhite;
+                        border-radius: 50%;
+                        padding: 3px 5px;
+                        position: relative;
+                        top: 10px;
+                        right: 10px;
+                        
+                    }
                 }
 
                 a.active {
