@@ -1,5 +1,5 @@
-/** IMPORT PARTIALS **/
-/** CSS SNIPPET **/
+/** VARIABLES & MIXINS **/
+/* ***IMPORT GOOGLE FONTS*** */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap");
 /* ***GLOBAL VARIABLES*** */
 /* ***GLOBAL MIXINS*** */
@@ -9,896 +9,7 @@
 /* Body Style */
 /* Body Text */
 /* Footing */
-/**IMPORT UTILITIES **/
-/* ***HEADER STYLES*** */
-.home .wrapper {
-  background-image: url(../assets/home-1.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 65vh;
-  padding: 10px 20px;
-}
-.home .wrapper .navigation {
-  display: inline-block;
-  width: 100%;
-  position: relative;
-}
-.home .wrapper .navigation .logo {
-  float: left;
-}
-.home .wrapper .navigation .logo h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 2.3rem; /* 46px */
-  line-height: 24px;
-  letter-spacing: 1.1px;
-  color: #2E2E2E;
-  text-transform: uppercase;
-}
-.home .wrapper .navigation .toggle {
-  display: none;
-  width: 35px;
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  cursor: pointer;
-}
-.home .wrapper .navigation .toggle span {
-  width: 100%;
-  height: 2px;
-  background-color: #2E2E2E;
-  float: left;
-  margin-bottom: 8px;
-}
-.home .wrapper .navigation nav {
-  display: block;
-  float: right;
-}
-.home .wrapper .navigation nav ul li {
-  display: inline-block;
-  padding: 5px;
-  cursor: pointer;
-}
-.home .wrapper .navigation nav ul li a {
-  display: inline-block;
-  color: #2E2E2E;
-  text-transform: uppercase;
-}
-.home .wrapper .navigation nav ul li a:hover {
-  display: inline-block;
-  color: #6bb102;
-}
-.home .wrapper .navigation nav ul li a i .itemQty {
-  background-color: #6bb102;
-  color: #F6F6F6;
-  border-radius: 50%;
-  padding: 3px 5px;
-  position: relative;
-  top: 10px;
-  right: 10px;
-}
-.home .wrapper .navigation nav ul li a.active {
-  color: #6bb102;
-}
-
-/** BACKGROUND IMG FOR **CONTACT** PAGE **/
-.home .contactPage {
-  background-image: url(../assets/contact-1.jpeg);
-}
-
-/** BACKGROUND IMG FOR **BLOG** PAGE **/
-.home .blogPage {
-  background-image: url(../assets/blog-1.jpeg);
-  height: 40vh;
-}
-
-/**IMPORT UTILITIES **/
-/* ***RECIPES SECTION*** */
-.recipes article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0;
-}
-.recipes article .text {
-  width: 50%;
-  text-align: center;
-  padding: 50px 20px;
-}
-.recipes article .text h2 {
-  margin-top: 50px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  color: #2E2E2E;
-}
-.recipes article .text p {
-  margin: 20px 0;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.recipes article .text button {
-  margin: 0;
-  border: 0;
-  padding: 5px 30px;
-  background-color: #6bb102;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  color: white;
-}
-.recipes article .text button:hover {
-  color: #333333;
-}
-.recipes article figure {
-  width: 50%;
-  height: auto;
-}
-.recipes article figure img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/**IMPORT UTILITIES **/
-/* ***SHOP SECTION*** */
-.shop article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.shop article .text {
-  width: 50%;
-  background-color: #F6F6F6;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.shop article .text ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px;
-}
-.shop article .text ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 45%;
-  margin: 10px 0;
-}
-.shop article .text ul li .icon {
-  margin: 15px 5px;
-  padding: 5px;
-}
-.shop article .text ul li .icon i {
-  color: #2E2E2E;
-  font-size: 1rem;
-}
-.shop article .text ul li .textShop h3 {
-  text-transform: uppercase;
-  margin: 10px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  color: #2E2E2E;
-}
-.shop article .text ul li .textShop p {
-  margin: 0;
-  padding: 0;
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.shop article .text ul li .textShop a h3:hover {
-  color: #6bb102;
-}
-.shop article figure {
-  width: 50%;
-  height: auto;
-}
-.shop article figure img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/**IMPORT UTILITIES **/
-/* ***ABOUT SECTION*** */
-.about {
-  /* ***ABOUT SECTION - GALLERY*** */
-}
-.about article {
-  width: 60%;
-  margin: 0 auto;
-  padding: 80px 10px;
-}
-.about article figure {
-  margin: 0 auto;
-  width: 65%;
-}
-.about article figure .topImg {
-  width: 20%;
-  position: relative;
-  float: right;
-  top: 30px;
-  right: -30px;
-}
-.about article .text {
-  text-align: center;
-}
-.about article .text h3 {
-  text-transform: uppercase;
-  margin: 30px 0 0 0;
-}
-.about article .text p {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.about .galleryWrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-.about .galleryWrapper ul li {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
-}
-
-/**IMPORT UTILITIES **/
-/* ***NUTRITION SECTION*** */
-.nutrition .wrapper {
-  background-color: #DDED9A;
-  text-align: center;
-  padding: 50px;
-}
-.nutrition .wrapper h2 {
-  text-transform: uppercase;
-  color: #2E2E2E;
-  margin: 0;
-}
-.nutrition .wrapper q {
-  display: inline-block;
-  font-size: 4rem;
-  color: #F6F6F6;
-  font-family: "Lora", serif;
-  font-style: italic;
-  margin-top: 20px;
-}
-.nutrition .wrapper q::before {
-  content: open-quote;
-  position: relative;
-  float: left;
-  top: 10px;
-  left: 45px;
-}
-.nutrition .wrapper q::after {
-  content: close-quote;
-  float: right;
-  position: relative;
-  right: 45px;
-  top: -10px;
-}
-.nutrition .wrapper q p {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Lora", serif;
-  font-style: italic;
-  font-size: 1.2rem; /* 24px */
-  line-height: 36px;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: #333333;
-  font-weight: 100;
-}
-.nutrition .wrapper button {
-  background-color: transparent;
-  color: #F6F6F6;
-  margin: 0 20px;
-  border: 0;
-  padding: 5px;
-  font-size: 2.3rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-.nutrition .wrapper button:hover {
-  color: #6bb102;
-}
-.nutrition .wrapper button.back {
-  color: rgba(246, 246, 246, 0.568627451);
-}
-
-/**IMPORT UTILITIES **/
-/* ***FOOTER SECTION*** */
-footer .wrapper {
-  background-color: #333333;
-  padding: 20px;
-  font-family: "Lora", serif;
-  font-size: 0.65rem; /* 13px */
-  line-height: 44px;
-  letter-spacing: 0.3px;
-  color: #999999;
-  padding: 20px 0 0 0;
-}
-footer .wrapper .topFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 50px;
-}
-footer .wrapper .topFooter .address {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-footer .wrapper .topFooter .address h2 {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #6bb102;
-  text-transform: uppercase;
-}
-footer .wrapper .topFooter .address p {
-  margin: 0;
-  padding: 0;
-}
-footer .wrapper .topFooter .address hr {
-  width: 90%;
-  margin: 0;
-  padding: 0;
-  color: rgba(153, 153, 153, 0.2745098039);
-}
-footer .wrapper .topFooter .recentPosts {
-  -ms-flex-preferred-size: 38%;
-      flex-basis: 38%;
-}
-footer .wrapper .topFooter .recentPosts h3 {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #F6F6F6;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-footer .wrapper .topFooter .recentPosts ul {
-  margin-top: 20px;
-}
-footer .wrapper .topFooter .recentPosts ul li {
-  border-top: 1px solid rgba(153, 153, 153, 0.2745098039);
-}
-footer .wrapper .topFooter .recentPosts ul li:first-child {
-  border: none;
-}
-footer .wrapper .topFooter .recentPosts ul li a {
-  color: #999999;
-}
-footer .wrapper .topFooter .recentPosts ul li a:hover {
-  color: #F6F6F6;
-}
-footer .wrapper .topFooter .subscribe {
-  -ms-flex-preferred-size: 28%;
-      flex-basis: 28%;
-}
-footer .wrapper .topFooter .subscribe h3 {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.9rem; /* 18px */
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #F6F6F6;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-footer .wrapper .topFooter .subscribe input[type=email] {
-  display: inline;
-  margin: 0;
-  padding: 5px 10px;
-  border: none;
-  background-color: rgba(153, 153, 153, 0.4666666667);
-  color: #F6F6F6;
-  min-height: 35px;
-  max-width: 180px;
-}
-footer .wrapper .topFooter .subscribe button {
-  margin: 0;
-  border: none;
-  padding: 7px;
-  background-color: #6bb102;
-  color: #F6F6F6;
-  position: relative;
-  left: -5px;
-  min-height: 35px;
-  min-width: 35px;
-  cursor: pointer;
-}
-footer .wrapper .topFooter .subscribe button:hover {
-  color: #2E2E2E;
-}
-footer .wrapper .topFooter .subscribe .socialMedia {
-  margin-top: 10px;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul {
-  border-top: 1px solid rgba(153, 153, 153, 0.4666666667);
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul li {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul li a {
-  color: #F6F6F6;
-  font-size: 1rem;
-}
-footer .wrapper .topFooter .subscribe .socialMedia ul li a:hover {
-  color: #6bb102;
-}
-footer .wrapper .bottomFooter {
-  background-color: #2E2E2E;
-  width: 100%;
-  min-height: 50px;
-  margin: 0;
-  padding-left: 50px;
-}
-footer .wrapper .bottomFooter p {
-  margin: 0;
-  padding: 0;
-}
-footer .wrapper .bottomFooter p span {
-  color: #6bb102;
-}
-
-/**IMPORT UTILITIES **/
-/* ***MAIN SECTION - CONTACT PAGE*** */
-.contactPage .wrapper .contactForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.contactPage .wrapper .contactForm .formWrapper {
-  width: 70%;
-  padding: 80px 20px;
-}
-.contactPage .wrapper .contactForm .formWrapper form {
-  width: 70%;
-  float: right;
-}
-.contactPage .wrapper .contactForm .formWrapper form input[type=text],
-.contactPage .wrapper .contactForm .formWrapper form input[type=email],
-.contactPage .wrapper .contactForm .formWrapper form textarea {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #333333;
-  background-color: #F6F6F6;
-  border: none;
-  min-height: 40px;
-  margin: 10px 0;
-  padding: 10px;
-}
-.contactPage .wrapper .contactForm .formWrapper form input[id=userName], .contactPage .wrapper .contactForm .formWrapper form [id=userEmail] {
-  width: 49%;
-}
-.contactPage .wrapper .contactForm .formWrapper form input[id=subject] {
-  width: 99%;
-}
-.contactPage .wrapper .contactForm .formWrapper form textarea {
-  width: 99%;
-  min-height: 200px;
-  resize: none;
-}
-.contactPage .wrapper .contactForm .formWrapper form button[type=submit] {
-  background-color: transparent;
-  color: #6bb102;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-.contactPage .wrapper .contactForm .formWrapper form button[type=submit]:hover {
-  color: #2E2E2E;
-}
-.contactPage .wrapper .contactForm .formWrapper h2 {
-  text-align: left;
-  text-transform: uppercase;
-  margin: 15px 0;
-}
-.contactPage .wrapper .contactForm .detailsWrapper {
-  width: 30%;
-  background-color: #F6F6F6;
-}
-.contactPage .wrapper .contactForm .detailsWrapper .contactDetails,
-.contactPage .wrapper .contactForm .detailsWrapper .workingHours,
-.contactPage .wrapper .contactForm .detailsWrapper .contactInfo {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-  margin: 40px 20px;
-  width: 65%;
-}
-.contactPage .wrapper .contactForm .detailsWrapper .contactDetails h2,
-.contactPage .wrapper .contactForm .detailsWrapper .workingHours h2,
-.contactPage .wrapper .contactForm .detailsWrapper .contactInfo h2 {
-  text-transform: uppercase;
-  color: #2E2E2E;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-}
-.contactPage .wrapper .contactForm .detailsWrapper .contactDetails h3,
-.contactPage .wrapper .contactForm .detailsWrapper .workingHours h3,
-.contactPage .wrapper .contactForm .detailsWrapper .contactInfo h3 {
-  text-transform: uppercase;
-  color: #2E2E2E;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-.contactPage .wrapper .contactForm .detailsWrapper .contactDetails p,
-.contactPage .wrapper .contactForm .detailsWrapper .workingHours p,
-.contactPage .wrapper .contactForm .detailsWrapper .contactInfo p {
-  margin: 0;
-}
-.contactPage .wrapper .contactForm .detailsWrapper .contactDetails p span,
-.contactPage .wrapper .contactForm .detailsWrapper .workingHours p span,
-.contactPage .wrapper .contactForm .detailsWrapper .contactInfo p span {
-  color: #2E2E2E;
-  font-family: Raleway ", sans-serif";
-}
-
-/**IMPORT UTILITIES **/
-/* ***MAIN SECTION*** */
-/* ***RECIPE SECTION*** */
-.recipePC .recipePost {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-.recipePC .recipePost h1 {
-  text-transform: uppercase;
-  margin: 0;
-}
-.recipePC .recipePost .subText span {
-  font-size: 0.6rem;
-  position: relative;
-  top: -10px;
-  border-left: 1px solid #333333;
-  padding: 0 5px;
-}
-.recipePC .recipePost .subText span:first-child {
-  border-left: none;
-  padding-left: 0;
-}
-.recipePC .recipePost p {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.recipePC .recipePost .articleFooter {
-  margin: 20px 0;
-  border-top: 2px solid #F6F6F6;
-  border-bottom: 2px solid #F6F6F6;
-  padding: 10px 0;
-}
-.recipePC .recipePost .articleFooter span {
-  color: #333333;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-}
-.recipePC .recipePost .articleFooter ul li {
-  display: inline;
-  margin: 0 5px 0 0;
-}
-.recipePC .recipePost .articleFooter ul li span {
-  color: #333333;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.7rem;
-}
-.recipePC .recipePost .articleFooter ul li a i {
-  color: #999999;
-}
-.recipePC .recipePost .articleFooter ul li a i:hover {
-  color: #2E2E2E;
-}
-
-/* ***MAIN POST SECTION*** */
-.posts .mainPost {
-  width: 80%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 30px 0;
-}
-.posts .mainPost .mainPostImg {
-  width: 20%;
-}
-.posts .mainPost .mainPostImg img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.posts .mainPost .textPost {
-  width: 78%;
-  padding: 10px;
-  background-color: #F6F6F6;
-}
-.posts .mainPost .textPost h3 {
-  text-transform: uppercase;
-}
-.posts .mainPost .textPost p {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-.posts .relatedPosts {
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 2px solid #F6F6F6;
-  border-top: 2px solid #F6F6F6;
-}
-.posts .relatedPosts h3 {
-  text-transform: uppercase;
-}
-.posts .relatedPosts .postGallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.posts .relatedPosts .postGallery figure {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
-}
-.posts .relatedPosts .postGallery figure h3 {
-  font-size: 1rem;
-  margin: 0;
-}
-.posts .relatedPosts .postGallery figure .subText span {
-  color: #999999;
-  font-size: 0.6rem;
-  position: relative;
-  top: -15px;
-  border-left: 1px solid #333333;
-  padding: 0 5px;
-}
-.posts .relatedPosts .postGallery figure .subText span:first-child {
-  border-left: none;
-  padding-left: 0;
-}
-
-/* ***COMMENTS SECTION*** */
-.comments .userComments {
-  width: 80%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.comments .userComments h3 {
-  text-transform: uppercase;
-}
-.comments .userComments .commentCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.comments .userComments .commentCard figure {
-  -ms-flex-preferred-size: 7%;
-      flex-basis: 7%;
-  margin-bottom: 20px;
-}
-.comments .userComments .commentCard .textComment {
-  -ms-flex-preferred-size: 88%;
-      flex-basis: 88%;
-  background-color: #F6F6F6;
-  color: #2E2E2E;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  position: relative;
-  padding: 10px;
-}
-.comments .userComments .commentCard .textComment::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10%;
-  width: 0;
-  height: 0;
-  border: 33px solid transparent;
-  border-right-color: #F6F6F6;
-  border-left: 0;
-  border-bottom: 0;
-  margin-top: -16.5px;
-  margin-left: -33px;
-}
-.comments .userComments .commentCard .textComment span {
-  font-weight: 100;
-}
-.comments .userComments .commentCard .textComment p {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #333333;
-}
-.comments .leaveComment {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-.comments .leaveComment h3 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.comments .leaveComment p {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-  margin: 0;
-}
-.comments .leaveComment form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.comments .leaveComment form input[type=text],
-.comments .leaveComment form input[type=email],
-.comments .leaveComment form textarea {
-  font-family: "Lora", serif;
-  font-size: 0.7rem; /* 14px */
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-  background-color: white;
-  border: 2px solid #F6F6F6;
-  min-height: 30px;
-  margin: 10px 0;
-  padding: 5px 10px;
-  color: #999999;
-  font-weight: bold;
-}
-.comments .leaveComment form input[type=text],
-.comments .leaveComment form input[type=email] {
-  width: 31%;
-}
-.comments .leaveComment form textarea {
-  width: 100%;
-  height: 150px;
-  resize: none;
-}
-.comments .leaveComment form button {
-  background-color: #6bb102;
-  margin: 0;
-  border: 0;
-  color: #F6F6F6;
-  text-transform: uppercase;
-  padding: 15px 20px;
-  font-weight: bold;
-}
-.comments .leaveComment form button:hover {
-  color: #2E2E2E;
-}
-
+/** CSS SNIPPET **/
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -1127,7 +238,6 @@ html {
   overflow: hidden;
 }
 
-/* ***IMPORT GOOGLE FONTS*** */
 /* Google fonts  ****
     font-family: 'Lora', serif;
     font-family: 'Raleway', sans-serif;
@@ -1178,6 +288,939 @@ hr {
   text-align: center;
 }
 
+/**IMPORT UTILITIES **/
+/* ***HEADER STYLES*** */
+.home .wrapper {
+  background-image: url(../assets/home-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  padding: 10px 20px;
+}
+.home .wrapper .navigation {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.home .wrapper .navigation .logo {
+  float: left;
+}
+.home .wrapper .navigation .logo h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem; /* 46px */
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  color: #2E2E2E;
+  text-transform: uppercase;
+}
+.home .wrapper .navigation .toggle {
+  display: none;
+  width: 35px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+}
+.home .wrapper .navigation .toggle span {
+  width: 100%;
+  height: 2px;
+  background-color: #2E2E2E;
+  float: left;
+  margin-bottom: 8px;
+}
+.home .wrapper .navigation nav {
+  display: block;
+  float: right;
+}
+.home .wrapper .navigation nav ul li {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.home .wrapper .navigation nav ul li a {
+  display: inline-block;
+  color: #2E2E2E;
+  text-transform: uppercase;
+}
+.home .wrapper .navigation nav ul li a:hover {
+  display: inline-block;
+  color: #6bb102;
+}
+.home .wrapper .navigation nav ul li a i .itemQty {
+  background-color: #6bb102;
+  color: #F6F6F6;
+  border-radius: 50%;
+  padding: 3px 5px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+.home .wrapper .navigation nav ul li a.active {
+  color: #6bb102;
+}
+
+/** BACKGROUND IMG FOR **CONTACT** PAGE **/
+.home .contactPage {
+  background-image: url(../assets/contact-1.jpeg);
+  height: 40vh;
+}
+
+/** BACKGROUND IMG FOR **BLOG** PAGE **/
+.home .blogPage {
+  background-image: url(../assets/blog-1.jpeg);
+  height: 40vh;
+}
+
+/**IMPORT UTILITIES **/
+/* ***FOOTER SECTION*** */
+footer .wrapper {
+  background-color: #333333;
+  font-family: "Lora", serif;
+  font-size: 0.65rem; /* 13px */
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  padding: 0;
+  padding-top: 30px;
+}
+footer .wrapper .topFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 80px;
+}
+footer .wrapper .topFooter .address {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+footer .wrapper .topFooter .address h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #6bb102;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+footer .wrapper .topFooter .address p {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+footer .wrapper .topFooter .address hr {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  color: rgba(153, 153, 153, 0.2745098039);
+}
+footer .wrapper .topFooter .recentPosts {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+footer .wrapper .topFooter .recentPosts h3 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+footer .wrapper .topFooter .recentPosts ul {
+  margin-top: 20px;
+}
+footer .wrapper .topFooter .recentPosts ul li {
+  line-height: 30px;
+  border-top: 1px solid rgba(153, 153, 153, 0.2745098039);
+}
+footer .wrapper .topFooter .recentPosts ul li:first-child {
+  border: none;
+}
+footer .wrapper .topFooter .recentPosts ul li a {
+  color: #999999;
+}
+footer .wrapper .topFooter .recentPosts ul li a:hover {
+  color: #F6F6F6;
+}
+footer .wrapper .topFooter .subscribe {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+footer .wrapper .topFooter .subscribe h3 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+footer .wrapper .topFooter .subscribe p {
+  line-height: 20px;
+}
+footer .wrapper .topFooter .subscribe input[type=email] {
+  display: inline;
+  margin: 0;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgba(153, 153, 153, 0.4666666667);
+  color: #F6F6F6;
+  min-height: 35px;
+  max-width: 180px;
+}
+footer .wrapper .topFooter .subscribe button {
+  margin: 0;
+  border: none;
+  padding: 7px;
+  background-color: #6bb102;
+  color: #F6F6F6;
+  position: relative;
+  left: -5px;
+  min-height: 35px;
+  min-width: 35px;
+  cursor: pointer;
+}
+footer .wrapper .topFooter .subscribe button:hover {
+  color: #2E2E2E;
+}
+footer .wrapper .topFooter .subscribe .socialMedia {
+  margin-top: 10px;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul {
+  border-top: 1px solid rgba(153, 153, 153, 0.4666666667);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul li a {
+  color: #F6F6F6;
+  font-size: 1rem;
+}
+footer .wrapper .topFooter .subscribe .socialMedia ul li a:hover {
+  color: #6bb102;
+}
+footer .wrapper .bottomFooter {
+  background-color: #2E2E2E;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  padding-left: 50px;
+}
+footer .wrapper .bottomFooter p {
+  margin: 0;
+  padding: 0;
+}
+footer .wrapper .bottomFooter p span {
+  color: #6bb102;
+}
+
+/**IMPORT UTILITIES **/
+/* ***RECIPES SECTION*** */
+.recipes article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+.recipes article .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-align: center;
+  padding: 50px 20px;
+}
+.recipes article .text .textWrapper {
+  background-color: white;
+}
+.recipes article .text h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #2E2E2E;
+}
+.recipes article .text p {
+  margin: 20px 0;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.recipes article .text button {
+  margin: 0;
+  border: 0;
+  padding: 5px 30px;
+  background-color: #6bb102;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.recipes article .text button:hover {
+  color: #333333;
+}
+.recipes article figure {
+  width: 50%;
+  height: auto;
+}
+.recipes article figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/**IMPORT UTILITIES **/
+/* ***SHOP SECTION*** */
+.shop article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.shop article .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  background-color: #F6F6F6;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.shop article .text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+}
+.shop article .text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 45%;
+  margin: 10px 0;
+}
+.shop article .text ul li .icon {
+  margin: 15px 5px;
+  padding: 5px;
+}
+.shop article .text ul li .icon i {
+  color: #2E2E2E;
+  font-size: 1rem;
+}
+.shop article .text ul li .textShop h3 {
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem; /* 18px */
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #2E2E2E;
+}
+.shop article .text ul li .textShop p {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.shop article .text ul li .textShop a h3:hover {
+  color: #6bb102;
+}
+.shop article figure {
+  width: 50%;
+  height: auto;
+}
+.shop article figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/**IMPORT UTILITIES **/
+/* ***ABOUT SECTION*** */
+.about {
+  /* ***ABOUT SECTION - GALLERY*** */
+}
+.about article {
+  width: 60%;
+  margin: 0 auto;
+  padding: 80px 10px;
+}
+.about article figure {
+  margin: 0 auto;
+  width: 65%;
+}
+.about article figure .topImg {
+  width: 20%;
+  position: relative;
+  float: right;
+  top: 30px;
+  right: -30px;
+}
+.about article .text {
+  text-align: center;
+}
+.about article .text h3 {
+  text-transform: uppercase;
+  margin: 30px 0 0 0;
+}
+.about article .text p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.about .galleryWrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.about .galleryWrapper ul li {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+/**IMPORT UTILITIES **/
+/* ***NUTRITION SECTION*** */
+.nutrition .wrapper {
+  background-color: #DDED9A;
+  text-align: center;
+  padding: 50px;
+}
+.nutrition .wrapper h2 {
+  text-transform: uppercase;
+  color: #2E2E2E;
+  margin: 0;
+}
+.nutrition .wrapper q {
+  display: inline-block;
+  font-size: 4rem;
+  color: #F6F6F6;
+  font-family: "Lora", serif;
+  font-style: italic;
+  margin-top: 20px;
+}
+.nutrition .wrapper q::before {
+  content: open-quote;
+  position: relative;
+  float: left;
+  top: 10px;
+  left: 45px;
+}
+.nutrition .wrapper q::after {
+  content: close-quote;
+  float: right;
+  position: relative;
+  right: 45px;
+  top: -10px;
+}
+.nutrition .wrapper q p {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 1.2rem; /* 24px */
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #333333;
+  font-weight: 100;
+}
+.nutrition .wrapper button {
+  background-color: transparent;
+  color: #F6F6F6;
+  margin: 0 20px;
+  border: 0;
+  padding: 5px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nutrition .wrapper button:hover {
+  color: #6bb102;
+}
+.nutrition .wrapper button.back {
+  color: rgba(246, 246, 246, 0.568627451);
+}
+
+/**IMPORT UTILITIES **/
+/* ***MAIN SECTION - CONTACT PAGE*** */
+.contactPage .wrapper .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactPage .wrapper .contactForm .formWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 65%;
+  padding: 50px 10px;
+}
+.contactPage .wrapper .contactForm .formWrapper form {
+  width: 80%;
+  float: right;
+}
+.contactPage .wrapper .contactForm .formWrapper form input[type=text],
+.contactPage .wrapper .contactForm .formWrapper form input[type=email],
+.contactPage .wrapper .contactForm .formWrapper form textarea {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #333333;
+  background-color: #F6F6F6;
+  border: none;
+  min-height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.contactPage .wrapper .contactForm .formWrapper form input[id=userName], .contactPage .wrapper .contactForm .formWrapper form [id=userEmail] {
+  width: 49%;
+}
+.contactPage .wrapper .contactForm .formWrapper form input[id=subject] {
+  width: 99%;
+}
+.contactPage .wrapper .contactForm .formWrapper form textarea {
+  width: 99%;
+  min-height: 200px;
+  resize: none;
+}
+.contactPage .wrapper .contactForm .formWrapper form button[type=submit] {
+  background-color: transparent;
+  color: #6bb102;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contactPage .wrapper .contactForm .formWrapper form button[type=submit]:hover {
+  color: #2E2E2E;
+}
+.contactPage .wrapper .contactForm .formWrapper h2 {
+  text-align: left;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.contactPage .wrapper .contactForm .detailsWrapper {
+  padding: 50px 0 10px 0;
+  width: 35%;
+  background-color: #F6F6F6;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  margin: 30px 20px;
+  width: 65%;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails h2,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours h2,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo h2 {
+  text-transform: uppercase;
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails h3,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours h3,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo h3 {
+  text-transform: uppercase;
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails p,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours p,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo p {
+  margin: 0;
+}
+.contactPage .wrapper .contactForm .detailsWrapper .contactDetails p span,
+.contactPage .wrapper .contactForm .detailsWrapper .workingHours p span,
+.contactPage .wrapper .contactForm .detailsWrapper .contactInfo p span {
+  color: #2E2E2E;
+  font-family: Raleway ", sans-serif";
+}
+
+/**IMPORT UTILITIES **/
+/* ***MAIN SECTION*** */
+/* ***RECIPE SECTION*** */
+.recipePC .recipePost {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.recipePC .recipePost h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.recipePC .recipePost .subText span {
+  font-size: 0.6rem;
+  position: relative;
+  top: -10px;
+  border-left: 1px solid #333333;
+  padding: 0 5px;
+}
+.recipePC .recipePost .subText span:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.recipePC .recipePost p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.recipePC .recipePost .articleFooter {
+  margin: 20px 0;
+  border-top: 2px solid #F6F6F6;
+  border-bottom: 2px solid #F6F6F6;
+  padding: 10px 0;
+}
+.recipePC .recipePost .articleFooter span {
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.recipePC .recipePost .articleFooter ul li {
+  display: inline;
+  margin: 0 5px 0 0;
+}
+.recipePC .recipePost .articleFooter ul li span {
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.recipePC .recipePost .articleFooter ul li a i {
+  color: #999999;
+}
+.recipePC .recipePost .articleFooter ul li a i:hover {
+  color: #2E2E2E;
+}
+
+/* ***MAIN POST SECTION*** */
+.posts .mainPost {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+.posts .mainPost .mainPostImg {
+  width: 20%;
+}
+.posts .mainPost .mainPostImg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.posts .mainPost .textPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  width: 78%;
+  padding: 10px 30px;
+  background-color: #F6F6F6;
+}
+.posts .mainPost .textPost h3 {
+  text-transform: uppercase;
+}
+.posts .mainPost .textPost p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.posts .relatedPosts {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid #F6F6F6;
+  border-top: 2px solid #F6F6F6;
+}
+.posts .relatedPosts h3 {
+  text-transform: uppercase;
+}
+.posts .relatedPosts .postGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.posts .relatedPosts .postGallery figure {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+.posts .relatedPosts .postGallery figure h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.posts .relatedPosts .postGallery figure .subText span {
+  color: #999999;
+  font-size: 0.6rem;
+  position: relative;
+  top: -15px;
+  border-left: 1px solid #333333;
+  padding: 0 5px;
+}
+.posts .relatedPosts .postGallery figure .subText span:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* ***COMMENTS SECTION*** */
+.comments .wrapper {
+  padding-bottom: 100px;
+}
+.comments .userComments {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.comments .userComments h3 {
+  text-transform: uppercase;
+}
+.comments .userComments .commentCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comments .userComments .commentCard figure {
+  -ms-flex-preferred-size: 7%;
+      flex-basis: 7%;
+  margin-bottom: 20px;
+}
+.comments .userComments .commentCard .textComment {
+  -ms-flex-preferred-size: 88%;
+      flex-basis: 88%;
+  background-color: #F6F6F6;
+  color: #2E2E2E;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  position: relative;
+  padding: 5px 30px;
+}
+.comments .userComments .commentCard .textComment::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 0;
+  height: 0;
+  border: 33px solid transparent;
+  border-right-color: #F6F6F6;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -16.5px;
+  margin-left: -33px;
+}
+.comments .userComments .commentCard .textComment span {
+  font-weight: 100;
+}
+.comments .userComments .commentCard .textComment p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+.comments .leaveComment {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.comments .leaveComment h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.comments .leaveComment p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  margin: 0;
+}
+.comments .leaveComment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comments .leaveComment form input[type=text],
+.comments .leaveComment form input[type=email],
+.comments .leaveComment form textarea {
+  font-family: "Lora", serif;
+  font-size: 0.7rem; /* 14px */
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+  background-color: white;
+  border: 2px solid #F6F6F6;
+  min-height: 30px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  color: #999999;
+  font-weight: bold;
+}
+.comments .leaveComment form input[type=text],
+.comments .leaveComment form input[type=email] {
+  width: 31%;
+}
+.comments .leaveComment form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+.comments .leaveComment form button {
+  background-color: #6bb102;
+  margin: 0;
+  border: 0;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.comments .leaveComment form button:hover {
+  color: #2E2E2E;
+}
+
+/** VARIABLES & MIXINS **/
 /* *************** MEDIA QUERIES ************* */
 /* ***PORTRAIT TABLET AND SMALL DESKTOPS*** */
 @media (max-width: 940px) {
@@ -1231,8 +1274,8 @@ hr {
     margin: 50px;
   }
   footer .wrapper .topFooter .address,
-footer .wrapper .topFooter .recentPosts,
-footer .wrapper .topFooter .subscribe {
+  footer .wrapper .topFooter .recentPosts,
+  footer .wrapper .topFooter .subscribe {
     margin: 10px auto;
     width: 80%;
     -ms-flex-preferred-size: 30%;
@@ -1381,13 +1424,23 @@ footer .wrapper .topFooter .subscribe {
   .nutrition .wrapper q p {
     font-size: 0.8rem;
   }
+  /* ***LEAVE A COMMENT FORM FOR SMALL SCREENS - BLOG PAGE*** */
+  .comments .leaveComment form input[type=text],
+  .comments .leaveComment form input[type=email] {
+    width: 100%;
+  }
+  /* ***CONTACT FORM FOR SMALL SCREENS - CONTACT PAGE*** */
+  .contactPage .wrapper .contactForm .formWrapper form input[id=userName],
+  .contactPage .wrapper .contactForm .formWrapper form input[id=userEmail] {
+    width: 100%;
+  }
   /* ***FOOTER FOR SMALL SCREENS*** */
   footer .wrapper .topFooter {
     margin: 10px;
   }
   footer .wrapper .topFooter .address,
-footer .wrapper .topFooter .recentPosts,
-footer .wrapper .topFooter .subscribe {
+  footer .wrapper .topFooter .recentPosts,
+  footer .wrapper .topFooter .subscribe {
     margin: 20px auto;
     width: 100%;
     -ms-flex-preferred-size: 30%;
@@ -1411,12 +1464,15 @@ footer .wrapper .topFooter .subscribe {
             flex-direction: column;
   }
   .contactPage .wrapper .contactForm .detailsWrapper,
-.contactPage .wrapper .contactForm .formWrapper {
+  .contactPage .wrapper .contactForm .formWrapper {
     width: 100%;
   }
   .comments .userComments .commentCard figure {
     padding-top: 20px;
   }
 }
-/*************************** IMPROVEMENTS **********************************/
-/***************************************************************************/
+/** IMPORT PARTIALS **/
+/** GLOBAL **/
+/** HOME **/
+/** OTHER PAGES **/
+/** MEDIA QUERIES **/

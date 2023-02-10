@@ -8,14 +8,25 @@
     flex-direction: row;
     padding: 0;
 
+    // border: 1px solid blue;
+
     .text {
-        // border: 1px solid purple;
+        display: flex;
+        align-items: center;
         width: 50%;
         text-align: center;        
         padding: 50px 20px;
 
+        // background-color: red;
+        
+
+        .textWrapper {
+            background-color: white;
+        }
+        
+
         h2 {
-            margin-top: 50px;
+            margin-top: 0;
             text-transform: uppercase;
             @include bodyStyle($black);
         }

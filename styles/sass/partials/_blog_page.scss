@@ -8,6 +8,7 @@
     // border: 1px solid tomato;
 }
 
+
 /* ***MAIN SECTION*** */
 /* ***RECIPE SECTION*** */
 .recipePC .recipePost {
@@ -46,7 +47,7 @@
             color: $blackTwo;
             text-transform: uppercase;
             font-family: "Raleway", sans-serif;
-            font-weight: bold;
+            font-weight: bold;           
         }
 
         ul li {
@@ -90,9 +91,13 @@
             }
         }
 
-        .textPost {
+        .textPost {            
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+
             width: 78%;
-            padding: 10px;
+            padding: 10px 30px;
             background-color: $bgWhite;
 
             h3 {
@@ -147,6 +152,9 @@
 
 /* ***COMMENTS SECTION*** */
 .comments { 
+    .wrapper {
+        padding-bottom: 100px;
+    }
     .userComments {
         @include centralizedWrapper();
         display: flex;
@@ -170,20 +178,19 @@
 
     
             .textComment {
-
                 flex-basis: 88%;
                 background-color: $bgWhite;
                 color: $black;
                 margin-bottom: 20px;
                 margin-left: 10px;
                 position: relative;
-                padding: 10px;            
+                padding: 5px 30px;            
 
                 &::after {
                     content: '';
                     position: absolute;
                     left: 0;
-                    top: 10%;
+                    top: 15%;
                     width: 0;
                     height: 0;
                     border: 33px solid transparent;
@@ -257,6 +264,7 @@
                 text-transform: uppercase;
                 padding: 15px 20px;
                 font-weight: bold;
+                cursor: pointer;
 
                 &:hover {
                     color: $black;

@@ -4,16 +4,16 @@
 
 /* ***FOOTER SECTION*** */
 footer .wrapper {
-    background-color: $blackTwo;
-    padding: 20px;
+    background-color: $blackTwo;  
     @include footing($brownGrey);
-    padding: 20px 0 0 0;
+    padding: 0;
+    padding-top: 30px;
 
     .topFooter {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 50px;
+        margin: 50px 80px;
 
         .address {
             flex-basis: 30%;
@@ -21,12 +21,15 @@ footer .wrapper {
 
             h2 {
                 margin: 0;
+                margin-bottom: 30px;
                 @include footerHeading($green);
+                font-size: 30px;
             }
 
             p {
                 margin: 0;
                 padding: 0;
+                line-height: 20px;
             }
 
             hr {
@@ -38,7 +41,7 @@ footer .wrapper {
         }
 
         .recentPosts {
-            flex-basis: 38%;
+            flex-basis: 30%;
             // border: 1px solid yellow;
 
             h3 {
@@ -51,6 +54,7 @@ footer .wrapper {
                 margin-top: 20px;
 
                 li {
+                    line-height: 30px;
                     border-top: 1px solid #99999946;
 
                     &:first-child {
@@ -58,7 +62,7 @@ footer .wrapper {
                     }
 
                     a {
-                        color: $brownGrey;
+                        color: $brownGrey;                        
 
                         &:hover {
                             color: $bgWhite;
@@ -69,13 +73,17 @@ footer .wrapper {
         }
 
         .subscribe {
-            flex-basis: 28%;
+            flex-basis: 30%;
             // border: 1px solid orangered;
 
             h3 {
                 margin: 0;
                 @include footerHeading($bgWhite);
                 font-size: 0.7rem;
+            }
+
+            p {
+                line-height: 20px;
             }
 
             input[type=email] {

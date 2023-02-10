@@ -1,6 +1,7 @@
 /**IMPORT UTILITIES **/
 @use "./utilities" as *;
 
+
 /* ***MAIN SECTION - CONTACT PAGE*** */
 .contactPage .wrapper {
 
@@ -10,13 +11,16 @@
         justify-content: space-between;
 
         .formWrapper {
-            width: 70%;
-            padding: 80px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            width: 65%;
+            padding: 50px 10px;
 
             // border: 1px solid red;
 
             form {     
-                width: 70%; 
+                width: 80%; 
                 float: right;                
                 
                 // border: 1px solid purple;
@@ -66,15 +70,16 @@
             }
         }
 
-        .detailsWrapper {
-            width: 30%;
-            background-color: $bgWhite;
+        .detailsWrapper {     
+            padding: 50px 0 10px 0;       
+            width: 35%;
+            background-color: $bgWhite;            
             
             .contactDetails,
             .workingHours,
             .contactInfo {
                 @include bodyText($brownGrey);
-                margin: 40px 20px;
+                margin: 30px 20px;
                 width: 65%;
                 
                 // border: 1px solid yellow;

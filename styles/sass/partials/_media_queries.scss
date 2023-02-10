@@ -1,0 +1,285 @@
+/** VARIABLES & MIXINS **/
+@use "./utilities" as *;
+
+/* *************** MEDIA QUERIES ************* */
+/* ***PORTRAIT TABLET AND SMALL DESKTOPS*** */
+@media (max-width: 940px){
+    .home .wrapper .navigation {
+        .toggle {
+            display: block;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            display: none;
+            width: 100%;
+            padding-top: 20px;
+            margin-top: 30px;
+
+            ul li {
+                padding: 0;
+                width: 100%;  
+                text-align: center;
+                background-color: #dced9aef;
+                // border-top: 1px solid $black;   
+                
+                a {
+                    width: 100%;
+                    padding: 10px;
+                    @include bodyStyle($black);
+
+                    &:hover {
+                        background-color: $green;
+                        color: $bgWhite;
+                    }
+                }
+            }
+        }
+
+        nav.show {
+            display: block;
+        }        
+    }
+
+    /* ***FOOTER TO SMALL DESKTOPS*** */
+    footer .wrapper .topFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px;
+
+        .address, 
+        .recentPosts, 
+        .subscribe {
+            margin: 10px auto;
+            width: 80%;
+            flex-basis: 30%;
+        }
+
+        .subscribe input[type=email] {
+            min-width: 300px;
+        }
+    }
+}
+
+/* ***LANDSCAPE PHONE TO PORTRAIT TABLE*** */
+@media (max-width: 768px) {
+    /* ***RECIPES FOR MEDIUM SCREENS*** */
+    .recipes article {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .text {
+            width: 100%;
+            padding: 30px;
+
+            // border: 1px solid purple;
+            h2 {
+                margin: 10px;
+            }
+        }
+
+        figure {
+            width: 100%;
+
+            // border: 1px solid red;
+        }
+    }
+
+    /* ***SHOP FOR MEDIUM SCREENS*** */
+    .shop article {
+        display: flex;
+        flex-direction: column;
+
+        figure {
+            width: 100%;
+    
+            img {
+                height: 100%;   
+            }        
+        }
+
+        .text {
+            width: 100%;
+        }
+    }
+
+    /* ***ABOUT SECTION FOR MEDIUM SCREENS*** */
+    .about article figure .topImg {
+        top: 20px;
+        right: -20px;      
+    }
+
+    /* *** Moving left the open quote ***  */
+    .nutrition .wrapper q::before {
+        left: 20px;       
+    } 
+
+    /* *** CONTACT FORM FOR MEDIUM SCREENS - CONTACT PAGE *** */
+    .contactPage .wrapper .contactForm .formWrapper form {
+        width: 100%;
+    }
+
+    /* ***BLOG PAGE - POST - FOR MEDIUM SCREENS*** */
+    .posts .mainPost {
+        display: flex;
+        flex-direction: column;    
+        justify-content: space-between;
+        padding: 30px 0;
+        
+        .mainPostImg {
+            // width: 20%;
+            height: 20%;
+            margin: 10px auto;
+     
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .textPost {
+            width: 100%;
+            height: 70%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+    }
+
+    /* ***BLOG PAGE - RELATED POSTS - FOR MEDIUM SCREENS*** */
+    .posts .relatedPosts {
+        .postGallery {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    /* ***BLOG PAGE - USER COMMENTS - FOR MEDIUM SCREENS*** */
+    .comments .userComments {
+        width: 100%;
+        
+        .commentCard {
+            .textComment {
+                &::after {
+                    border: 17px solid transparent;
+                    border-right-color: $bgWhite;
+                    margin-top: -8.5px;
+                    margin-left: -30px;
+                }
+            }        
+        }
+    }
+}
+
+/* ***LANDSCAPE PHONES AND DOWN*** */
+@media (max-width: 480px) {
+    /* ***ABOUT SECTION FOR SMALL SCREENS*** */
+    .about article {
+        width: 85%;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        figure {
+            margin: 0 auto;
+            width: 70%;
+
+            .topImg {
+                width: 20%;
+                position: relative;
+                float: right;
+                top: 20px;
+                right: -20px;
+            }
+        }
+    }
+
+    /* ***NUTRITION SECTION FOR SMALL SCREENS*** */
+    .nutrition .wrapper {
+        padding: 20px 10px;
+
+        q {
+            &::before {
+                left: 10px;
+            }
+            &::after{
+                right: 20px;
+            }
+            p { font-size: 0.8rem; }
+        }        
+    } 
+
+    /* ***LEAVE A COMMENT FORM FOR SMALL SCREENS - BLOG PAGE*** */
+    .comments .leaveComment form {
+        
+        input[type=text],
+        input[type=email] {
+            width: 100%;
+        }
+    }
+
+    /* ***CONTACT FORM FOR SMALL SCREENS - CONTACT PAGE*** */
+    .contactPage .wrapper .contactForm .formWrapper form {
+        input[id="userName"],
+        input[id="userEmail"]
+         {
+            width: 100%;
+        }
+    }
+
+    /* ***FOOTER FOR SMALL SCREENS*** */
+    footer .wrapper {
+        .topFooter {
+            margin: 10px;
+
+            .address, 
+            .recentPosts, 
+            .subscribe {
+                margin: 20px auto;
+                width: 100%;
+                flex-basis: 30%;
+            }
+
+            .subscribe input[type=email] {
+                min-width: 280px;
+            }
+        }
+        
+        .bottomFooter {
+            padding: 5px 10px;
+            font-size: 0.5rem;
+        }
+    }
+
+    /* *** CONTACT FORM FOR MEDIUM SCREENS - CONTACT PAGE *** */
+    .contactPage .wrapper .contactForm {
+        display: flex;
+        flex-direction: column;   
+        
+        .detailsWrapper,
+        .formWrapper {
+            width: 100%;
+        }
+    }
+
+    .comments .userComments .commentCard figure {
+        padding-top: 20px;
+    }
+
+}
+
+
+// /* Portrait tablet and small desktops */
+// @media (max-width: 940px) {
+// }
+
+// /* Landscape phone to portrait tablet */
+// @media (max-width: 768px) {
+// }
+
+// /* Landscape phones and down */
+// @media (max-width: 480px) {
+// }
