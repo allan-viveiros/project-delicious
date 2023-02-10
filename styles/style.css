@@ -1234,13 +1234,15 @@ footer .wrapper .bottomFooter p span {
     display: none;
     width: 100%;
     padding-top: 20px;
-    margin-top: 30px;
+    margin: 0;
   }
   .home .wrapper .navigation nav ul li {
     padding: 0;
     width: 100%;
     text-align: center;
     background-color: rgba(220, 237, 154, 0.937254902);
+    position: relative;
+    z-index: 10;
   }
   .home .wrapper .navigation nav ul li a {
     width: 100%;
@@ -1255,6 +1257,9 @@ footer .wrapper .bottomFooter p span {
   .home .wrapper .navigation nav ul li a:hover {
     background-color: #6bb102;
     color: #F6F6F6;
+  }
+  .home .wrapper .navigation nav ul li a:hover span {
+    background-color: black;
   }
   .home .wrapper .navigation nav.show {
     display: block;
