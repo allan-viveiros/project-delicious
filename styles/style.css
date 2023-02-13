@@ -482,7 +482,7 @@ footer .wrapper .topFooter .subscribe input[type=email] {
   background-color: rgba(153, 153, 153, 0.4666666667);
   color: #F6F6F6;
   min-height: 35px;
-  max-width: 180px;
+  width: 80%;
 }
 footer .wrapper .topFooter .subscribe button {
   margin: 0;
@@ -1286,9 +1286,6 @@ footer .wrapper .bottomFooter p span {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
-  footer .wrapper .topFooter .subscribe input[type=email] {
-    min-width: 300px;
-  }
 }
 /* ***LANDSCAPE PHONE TO PORTRAIT TABLE*** */
 @media (max-width: 768px) {
@@ -1450,9 +1447,6 @@ footer .wrapper .bottomFooter p span {
     width: 100%;
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
-  }
-  footer .wrapper .topFooter .subscribe input[type=email] {
-    min-width: 280px;
   }
   footer .wrapper .bottomFooter {
     padding: 5px 10px;
