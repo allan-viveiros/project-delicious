@@ -7,44 +7,92 @@
     text-align: center;
     padding: 50px;
 
-    h2 {
-        text-transform: uppercase;
-        color: $black;
-        margin: 0;
-    }
+    #carouselContainer {
+        width: 800px;
+        height: 280px;
+        position: relative;
+        margin: 0 auto;
 
-    q {
-        display: inline-block;
-        font-size: 4rem;
-        color: $bgWhite;
-        font-family: 'Lora', serif;
-        font-style: italic;
-        margin-top: 20px;
-        // border: 1px solid blue;
+        & > div {
+            &:first-child {
+                overflow: hidden;
+                max-width: 100%;
+                max-height: 280px;
+                margin: 0 auto;
+            }
+        }
 
-        &::before {
-            content: open-quote;        
+        .animate {
+            -webkit-transition-duration: .5s;
+            -moz-transition-duration: .5s;
+            -o-transition-duration: .5s;
+            transition-duration: .5s;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+        }
+
+        #carousel {
             position: relative;
-            float: left;
-            top: 10px;
-            left: 45px;
-        }
+            width: 5000px;
+            height: 280px;
+            padding: 0;
+            margin: 0;
+            
+            .slide {
+                width: 800px;
+                list-style: none;
+                position: relative;
+                float: left;
+                transform: translateX(-800px);
 
-        &::after {
-            content: close-quote;      
-            float: right;
-            position: relative;
-            right: 45px;
-            top: -10px;
-        }
+                .slideContent {
+                    // border: 1px solid purple;
+                    padding: 20px;
 
-        p {
-            width: 80%;
-            margin: 0 auto; 
-            @include quotes($blackTwo);
-            font-weight: 100;
-            // border: 1px solid red;
-        }
+                    h2 {
+                        text-transform: uppercase;
+                        color: $black;
+                        margin: 0;
+                    }
+                
+                    q {
+                        display: inline-block;
+                        font-size: 4rem;
+                        color: $bgWhite;
+                        font-family: 'Lora', serif;
+                        font-style: italic;
+                        margin-top: 20px;
+                        // border: 1px solid blue;
+                
+                        &::before {
+                            content: open-quote;        
+                            position: relative;
+                            float: left;
+                            top: 10px;
+                            left: 40px;
+                        }
+                
+                        &::after {
+                            content: close-quote;      
+                            float: right;
+                            position: relative;
+                            right: 80px;
+                            top: -10px;
+                        }
+                
+                        p {
+                            width: 80%;
+                            margin: 0 auto; 
+                            @include quotes($blackTwo);
+                            font-weight: 100;
+                            // border: 1px solid red;
+                        }
+                    }
+                }
+            }
+        }    
     }
 
     button {
@@ -60,9 +108,5 @@
         &:hover {
             color: $green;
         }
-    }
-
-    button.back {
-        color: #f6f6f691;
     }
 }

@@ -50,6 +50,35 @@
         }        
     }
 
+    /* ***NUTRITION SECTION TO SMALL DESKTOPS*** */
+    .nutrition .wrapper #carouselContainer {
+        width: 650px;
+            
+        #carousel .slide {
+            width: 650px;
+            transform: translateX(-650px);
+
+            .slideContent {
+                // border: 1px solid purple;
+            
+                q {                    
+                    &::before {
+                        content: open-quote;        
+                        top: 10px;
+                        left: 30px;
+                    }
+            
+                    &::after {
+                        content: close-quote;      
+                        right: 50px;
+                        top: -10px;
+                    }     
+                }
+            }
+        }                
+    }
+    
+
     /* ***FOOTER TO SMALL DESKTOPS*** */
     footer .wrapper .topFooter {
         display: flex;
@@ -69,7 +98,7 @@
 
 /* ***LANDSCAPE PHONE TO PORTRAIT TABLE*** */
 @media (max-width: 768px) {
-    /* ***RECIPES FOR MEDIUM SCREENS*** */
+    /* ***RECIPES FOR PORTRAIT TABLE*** */
     .recipes article {
         display: flex;
         flex-direction: column-reverse;
@@ -91,7 +120,7 @@
         }
     }
 
-    /* ***SHOP FOR MEDIUM SCREENS*** */
+    /* ***SHOP FOR PORTRAIT TABLE*** */
     .shop article {
         display: flex;
         flex-direction: column;
@@ -106,26 +135,58 @@
 
         .text {
             width: 100%;
+
+            ul {
+                padding: 30px 10px;
+            }
         }
     }
 
-    /* ***ABOUT SECTION FOR MEDIUM SCREENS*** */
+    /* ***ABOUT SECTION FOR PORTRAIT TABLE*** */
     .about article figure .topImg {
         top: 20px;
         right: -20px;      
     }
 
-    /* *** Moving left the open quote ***  */
-    .nutrition .wrapper q::before {
-        left: 20px;       
-    } 
+    /* ***NUTRITION SECTION TO PORTRAIT TABLE*** */
+    .nutrition .wrapper {
+        padding: 50px 10px;
 
-    /* *** CONTACT FORM FOR MEDIUM SCREENS - CONTACT PAGE *** */
+        #carouselContainer {
+            width: 440px;
+            
+            #carousel .slide {
+                width: 440px;
+                transform: translateX(-440px);
+
+                .slideContent {
+                    padding: 0;
+                    // border: 1px solid purple;
+                
+                    q {                    
+                        &::before {
+                            content: open-quote;        
+                            top: 10px;
+                            left: 20px;
+                        }
+                
+                        &::after {
+                            content: close-quote;      
+                            right: 40px;
+                            top: -60px;
+                        }     
+                    }
+                }
+            }  
+        }              
+    }
+
+    /* *** CONTACT FORM FOR PORTRAIT TABLE - CONTACT PAGE *** */
     .contactPage .wrapper .contactForm .formWrapper form {
         width: 100%;
     }
 
-    /* ***BLOG PAGE - POST - FOR MEDIUM SCREENS*** */
+    /* ***BLOG PAGE - POST - FOR PORTRAIT TABLE*** */
     .posts .mainPost {
         display: flex;
         flex-direction: column;    
@@ -151,7 +212,7 @@
         }
     }
 
-    /* ***BLOG PAGE - RELATED POSTS - FOR MEDIUM SCREENS*** */
+    /* ***BLOG PAGE - RELATED POSTS - PORTRAIT TABLE*** */
     .posts .relatedPosts {
         .postGallery {
             display: flex;
@@ -160,7 +221,7 @@
         }
     }
 
-    /* ***BLOG PAGE - USER COMMENTS - FOR MEDIUM SCREENS*** */
+    /* ***BLOG PAGE - USER COMMENTS - FOR PORTRAIT TABLE*** */
     .comments .userComments {
         width: 100%;
         
@@ -201,18 +262,41 @@
 
     /* ***NUTRITION SECTION FOR SMALL SCREENS*** */
     .nutrition .wrapper {
-        padding: 20px 10px;
+        padding: 50px 0;
 
-        q {
-            &::before {
-                left: 10px;
-            }
-            &::after{
-                right: 20px;
-            }
-            p { font-size: 0.8rem; }
-        }        
-    } 
+        #carouselContainer {
+            width: 340px;
+            margin-bottom: 20px;
+            
+            #carousel .slide {
+                width: 340px;
+                transform: translateX(-340px);
+
+                .slideContent {
+                    padding: 0;
+                    // border: 1px solid purple;
+                
+                    q {                    
+                        &::before {
+                            content: open-quote;        
+                            top: 10px;
+                            left: 20px;
+                        }
+                
+                        &::after {
+                            content: close-quote;      
+                            right: 40px;
+                            top: -20px;
+                        }  
+                        
+                        p { 
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }  
+        }              
+    }
 
     /* ***LEAVE A COMMENT FORM FOR SMALL SCREENS - BLOG PAGE*** */
     .comments .leaveComment form {
