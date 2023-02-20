@@ -158,8 +158,8 @@
         <section class="comments">
             <div class="wrapper">
 
-                <div class="userComments">
-                    <h3>02 comments</h3>
+                <div class="userComments" id="userComments"> 
+                    <h3 id="h3Comments">02 comments</h3>
                 
                     <div class="commentCard">
                         <figure><img src="../assets/blog-6.jpeg" alt="Lucatony Avaro's picture"></figure>
@@ -175,7 +175,6 @@
                     <div class="commentCard">
                         <figure><img src="../assets/blog-7.jpeg" alt="Brian Hudson's picture"></figure>
 
-                        <!-- <span class="tipRight">ggdfff</span> -->
                         <div class="textComment">
                             <h4>Brian Hudson - <span>Web developer</span></h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor optio officia vero! Obcaecati laudantium mollitia impedit quos unde, temporibus magnam asperiores sit ipsa maiores reprehenderit, ab modi. Cupiditate maiores eos voluptatum eaque itaque molestiae necessitatibus quae possimus nulla iusto, velit veritatis reiciendis beatae non odio repellendus fugit libero repudiandae?</p>
@@ -183,12 +182,13 @@
                             <p class="postDate">Jul 17, 2015 at 15 hours ago</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="leaveComment">
                     <h3>leave a comment</h3>
                     <p>Your email address will not be published. Required fields are marked *</p>
-                    <form action="#" method="post" name="commentForm">
+                    <form action="#" method="post" id="commentForm" name="commentForm">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" placeholder="Name *" name="name" id="name" required>
 
@@ -273,14 +273,11 @@
             </div>
         </div>        
     </footer>
-
-    <!-- JAVASCRIPT TO TOGGLE MENU -->
-    <script type="text/javascript">
-        function toggleButton() {
-            var navBar = document.getElementById("nav");
-            navBar.classList.toggle('show');
-        }
-    </script>
     
+    <!-- JAVASCRIPT TO TOGGLE MENU -->
+    <script src="../js/hamburger.js"></script>
+    <!-- JAVASCRIPT TO USER COMMENTS -->
+    <script src="../js/blog.js"></script>
+
 </body>
 </html>
