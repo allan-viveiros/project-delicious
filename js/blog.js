@@ -12,11 +12,7 @@ let count = 2;
 formComment.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // console.log("form submit");
-
-    if(userName.value.trim() && userSite.value.trim() && userComment.value.trim()) {
-        // console.log("you ok");
-        
+    if(userName.value.trim() && userSite.value.trim() && userComment.value.trim()) {        
         count+= 1;
         
         let current = new Date();
@@ -30,14 +26,14 @@ formComment.addEventListener("submit", function(e) {
         const blogPost = document.createElement("div");
         blogPost.className = "commentCard";        
         blogPost.innerHTML = `
-        <figure><img src="../assets/anonymous.png" alt="Brian Hudson's picture"></figure>
+            <figure><img src="../assets/anonymous.png" alt="Brian Hudson's picture"></figure>
 
-        <div class="textComment">
-            <h4>${userName.value} - <span>${userSite.value}</span></h4>
-            <p>${userComment.value}</p>
-            
-            <p class="postDate">${month} ${day}, ${year} at ${hour}</p>
-        </div>
+            <div class="textComment">
+                <h4>${userName.value} - <span>${userSite.value}</span></h4>
+                <p>${userComment.value}</p>
+                
+                <p class="postDate">${month} ${day}, ${year} at ${hour}</p>
+            </div>
         `;
 
         userPost.appendChild(blogPost);
