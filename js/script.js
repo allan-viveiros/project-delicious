@@ -6,6 +6,8 @@ let currTransl = [];
 let translationComplete = true;
 let moveOffset = 0;
 
+const carouselContainer = document.querySelector("carouselContainer");
+
 const transitionCompleted = function() {
     translationComplete = true;
 }
@@ -85,5 +87,11 @@ function next() {
     }
 }
 
+// To readjust the carousel size when the browse is resized
+window.addEventListener("resize", refreshCarousel);
+
+function refreshCarousel() {
+    location.reload();
+} 
 
 
