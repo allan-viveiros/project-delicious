@@ -277,7 +277,7 @@ figure {
 .wrapper {
   background-color: white;
   max-width: 1200px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -765,12 +765,50 @@ footer .wrapper .bottomFooter p span {
   text-align: center;
   padding: 50px;
 }
-.nutrition .wrapper h2 {
+.nutrition .wrapper #carouselContainer {
+  width: 800px;
+  height: 280px;
+  position: relative;
+  margin: 0 auto;
+}
+.nutrition .wrapper #carouselContainer > div:first-child {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 280px;
+  margin: 0 auto;
+}
+.nutrition .wrapper #carouselContainer .animate {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.nutrition .wrapper #carouselContainer #carousel {
+  position: relative;
+  width: 5000px;
+  height: 280px;
+  padding: 0;
+  margin: 0;
+}
+.nutrition .wrapper #carouselContainer #carousel .slide {
+  width: 800px;
+  list-style: none;
+  position: relative;
+  float: left;
+  -webkit-transform: translateX(-800px);
+          transform: translateX(-800px);
+}
+.nutrition .wrapper #carouselContainer #carousel .slide .slideContent {
+  padding: 20px;
+}
+.nutrition .wrapper #carouselContainer #carousel .slide .slideContent h2 {
   text-transform: uppercase;
   color: #2E2E2E;
   margin: 0;
 }
-.nutrition .wrapper q {
+.nutrition .wrapper #carouselContainer #carousel .slide .slideContent q {
   display: inline-block;
   font-size: 4rem;
   color: #F6F6F6;
@@ -778,21 +816,21 @@ footer .wrapper .bottomFooter p span {
   font-style: italic;
   margin-top: 20px;
 }
-.nutrition .wrapper q::before {
+.nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::before {
   content: open-quote;
   position: relative;
   float: left;
   top: 10px;
-  left: 45px;
+  left: 40px;
 }
-.nutrition .wrapper q::after {
+.nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::after {
   content: close-quote;
   float: right;
   position: relative;
-  right: 45px;
+  right: 80px;
   top: -10px;
 }
-.nutrition .wrapper q p {
+.nutrition .wrapper #carouselContainer #carousel .slide .slideContent q p {
   width: 80%;
   margin: 0 auto;
   font-family: "Lora", serif;
@@ -816,9 +854,6 @@ footer .wrapper .bottomFooter p span {
 }
 .nutrition .wrapper button:hover {
   color: #6bb102;
-}
-.nutrition .wrapper button.back {
-  color: rgba(246, 246, 246, 0.568627451);
 }
 
 /**IMPORT UTILITIES **/
@@ -1270,6 +1305,25 @@ footer .wrapper .bottomFooter p span {
   .home .wrapper .navigation nav.show {
     display: block;
   }
+  /* ***NUTRITION SECTION TO SMALL DESKTOPS*** */
+  .nutrition .wrapper #carouselContainer {
+    width: 650px;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide {
+    width: 650px;
+    -webkit-transform: translateX(-650px);
+            transform: translateX(-650px);
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::before {
+    content: open-quote;
+    top: 10px;
+    left: 30px;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::after {
+    content: close-quote;
+    right: 50px;
+    top: -10px;
+  }
   /* ***FOOTER TO SMALL DESKTOPS*** */
   footer .wrapper .topFooter {
     display: -webkit-box;
@@ -1295,7 +1349,7 @@ footer .wrapper .bottomFooter p span {
 }
 /* ***LANDSCAPE PHONE TO PORTRAIT TABLE*** */
 @media (max-width: 768px) {
-  /* ***RECIPES FOR MEDIUM SCREENS*** */
+  /* ***RECIPES FOR PORTRAIT TABLE*** */
   .recipes article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1315,7 +1369,7 @@ footer .wrapper .bottomFooter p span {
   .recipes article figure {
     width: 100%;
   }
-  /* ***SHOP FOR MEDIUM SCREENS*** */
+  /* ***SHOP FOR PORTRAIT TABLE*** */
   .shop article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1334,20 +1388,44 @@ footer .wrapper .bottomFooter p span {
   .shop article .text {
     width: 100%;
   }
-  /* ***ABOUT SECTION FOR MEDIUM SCREENS*** */
+  .shop article .text ul {
+    padding: 30px 10px;
+  }
+  /* ***ABOUT SECTION FOR PORTRAIT TABLE*** */
   .about article figure .topImg {
     top: 20px;
     right: -20px;
   }
-  /* *** Moving left the open quote ***  */
-  .nutrition .wrapper q::before {
+  /* ***NUTRITION SECTION TO PORTRAIT TABLE*** */
+  .nutrition .wrapper {
+    padding: 50px 10px;
+  }
+  .nutrition .wrapper #carouselContainer {
+    width: 440px;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide {
+    width: 440px;
+    -webkit-transform: translateX(-440px);
+            transform: translateX(-440px);
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent {
+    padding: 0;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::before {
+    content: open-quote;
+    top: 10px;
     left: 20px;
   }
-  /* *** CONTACT FORM FOR MEDIUM SCREENS - CONTACT PAGE *** */
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::after {
+    content: close-quote;
+    right: 40px;
+    top: -60px;
+  }
+  /* *** CONTACT FORM FOR PORTRAIT TABLE - CONTACT PAGE *** */
   .contactPage .wrapper .contactForm .formWrapper form {
     width: 100%;
   }
-  /* ***BLOG PAGE - POST - FOR MEDIUM SCREENS*** */
+  /* ***BLOG PAGE - POST - FOR PORTRAIT TABLE*** */
   .posts .mainPost {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1376,7 +1454,7 @@ footer .wrapper .bottomFooter p span {
     margin: 0 auto;
     padding: 10px;
   }
-  /* ***BLOG PAGE - RELATED POSTS - FOR MEDIUM SCREENS*** */
+  /* ***BLOG PAGE - RELATED POSTS - PORTRAIT TABLE*** */
   .posts .relatedPosts .postGallery {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1389,7 +1467,7 @@ footer .wrapper .bottomFooter p span {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  /* ***BLOG PAGE - USER COMMENTS - FOR MEDIUM SCREENS*** */
+  /* ***BLOG PAGE - USER COMMENTS - FOR PORTRAIT TABLE*** */
   .comments .userComments {
     width: 100%;
   }
@@ -1421,15 +1499,31 @@ footer .wrapper .bottomFooter p span {
   }
   /* ***NUTRITION SECTION FOR SMALL SCREENS*** */
   .nutrition .wrapper {
-    padding: 20px 10px;
+    padding: 50px 0;
   }
-  .nutrition .wrapper q::before {
-    left: 10px;
+  .nutrition .wrapper #carouselContainer {
+    width: 340px;
+    margin-bottom: 20px;
   }
-  .nutrition .wrapper q::after {
-    right: 20px;
+  .nutrition .wrapper #carouselContainer #carousel .slide {
+    width: 340px;
+    -webkit-transform: translateX(-340px);
+            transform: translateX(-340px);
   }
-  .nutrition .wrapper q p {
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent {
+    padding: 0;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::before {
+    content: open-quote;
+    top: 10px;
+    left: 20px;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q::after {
+    content: close-quote;
+    right: 40px;
+    top: -20px;
+  }
+  .nutrition .wrapper #carouselContainer #carousel .slide .slideContent q p {
     font-size: 0.8rem;
   }
   /* ***LEAVE A COMMENT FORM FOR SMALL SCREENS - BLOG PAGE*** */

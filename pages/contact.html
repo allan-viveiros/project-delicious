@@ -19,6 +19,7 @@
             <div class="navigation">
                 <!-- TOGGLE BUTTON -->
                 <div class="toggle" onclick="toggleButton();">
+                    <span class="sr-only">menu</span>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -114,18 +115,16 @@
     <footer>
         <div class="wrapper">
             <div class="topFooter">
+                
                 <!-- ADDRESS -->
                 <div class="address">
                     <h2>delicious</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, numquam!</p>
-                    <!-- <hr> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, numquam!</p>                    
                     <address class="lineUp">
                         A delicious restaurant
                         Toronto, Ontario
-                    </address>
-                    <!-- <hr> -->
-                    <p class="lineUp">yum@food.com</p>
-                    <!-- <hr> -->
+                    </address>                   
+                    <p class="lineUp">yum@food.com</p>                    
                     <P class="lineUp">+1 234 567 8910</P>
                 </div>
 
@@ -147,9 +146,9 @@
                     <h3>subscribe now</h3>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
 
-                    <label for="email" class="sr-only" hidden>Email address</label>
+                    <label for="email" class="sr-only">Email address</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <button><i class="fa fa-arrow-right"></i></button>
+                    <button><i class="fa fa-arrow-right" aria-label="Send"></i></button>
 
                     <div class="socialMedia">
                         <ul>
@@ -175,12 +174,7 @@
     </footer>
 
     <!-- JAVASCRIPT TO TOGGLE MENU -->
-    <script type="text/javascript">
-        function toggleButton() {
-            var navBar = document.getElementById("nav");
-            navBar.classList.toggle('show');
-        }
-    </script>
+    <script src="../js/hamburger.js"></script>
     
 </body>
 </html>
